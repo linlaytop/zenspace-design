@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:mobile="http://www.baidu.com/schemas/sitemap-mobile/1/">
+
+  <!-- 首页 (优先级最高) -->
+  <url>
+    <loc>https://lumos-design.cn/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- 技术专栏列表页 -->
+  <url>
+    <loc>https://lumos-design.cn/tech</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- 技术专栏文章页 -->
+  <url>
+    <loc>https://lumos-design.cn/tech/ancient-building-lighting-guide</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/tech/resort-lighting-design-trends</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/tech/dmx512-protocol-guide</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- 环球艺术创造力列表页 -->
+  <url>
+    <loc>https://lumos-design.cn/art</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- 环球艺术创造力详情页 -->
+  <url>
+    <loc>https://lumos-design.cn/art/0</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/art/1</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/art/2</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/art/3</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/art/4</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/art/5</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- 业主采访列表页 -->
+  <url>
+    <loc>https://lumos-design.cn/interview</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- 业主采访详情页 -->
+  <url>
+    <loc>https://lumos-design.cn/interview/0</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/interview/1</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/interview/2</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/interview/3</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/interview/4</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- 服务流程列表页 -->
+  <url>
+    <loc>https://lumos-design.cn/workflow</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- 服务流程详情页 -->
+  <url>
+    <loc>https://lumos-design.cn/workflow/0</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/workflow/1</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/workflow/2</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/workflow/3</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/workflow/4</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/workflow/5</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- 服务分类页 -->
+  <url>
+    <loc>https://lumos-design.cn/service/cultural-tourism-light-magic</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/service/fashion-light-show</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/service/water-screen-laser-show</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/service/hotel-exterior-lighting</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/service/exhibition-hall-lighting</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/service/office-building-facade</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/service/ancient-building-lighting</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/service/landscape-garden-lighting</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/service/bespoke-villa-lighting</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/service/resort-lighting</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/service/clubhouse-lighting</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/service/museum-lighting</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/service/restaurant-lighting</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/service/spa-wellness-lighting</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/service/ktv-immersive-lighting</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/service/starlight-pathway</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://lumos-design.cn/service/lighting-art-installation</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+</urlset>

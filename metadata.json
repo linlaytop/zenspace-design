@@ -1,0 +1,8 @@
+{
+  "name": "Remix: 户外灯光设计高定版",
+  "description": "专注于户外灯光秀、酒店外观灯光、办公楼外立面、古建筑照明、园林景观漫射、别墅高端定制以及度假村全景灯光设计的数字化时尚前沿展示与智能创意顾问平台。",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

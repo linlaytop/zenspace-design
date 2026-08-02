@@ -1,0 +1,259 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* High-end pixel grid design backplate for CAD preview */
+  .bg-cad-grid {
+    background-size: 20px 20px;
+    background-image: 
+      linear-gradient(to right, rgba(6, 182, 212, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(6, 182, 212, 0.05) 1px, transparent 1px);
+  }
+}
+
+@keyframes soft-breath {
+  0%, 100% {
+    opacity: 0.85;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
+
+.animate-soft-breath {
+  animation: soft-breath 6s ease-in-out infinite;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+@keyframes border-glow-cycle {
+  0% {
+    border-color: rgba(245, 158, 11, 0.6); /* amber */
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.08);
+  }
+  33% {
+    border-color: rgba(6, 182, 212, 0.6); /* cyan */
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.08);
+  }
+  66% {
+    border-color: rgba(16, 185, 129, 0.6); /* emerald */
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.08);
+  }
+  100% {
+    border-color: rgba(245, 158, 11, 0.6); /* amber */
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.08);
+  }
+}
+
+.animate-dashed-glow {
+  border-style: dashed !important;
+  border-width: 1.5px !important;
+  animation: border-glow-cycle 5s linear infinite !important;
+}
+
+@keyframes led-flow-slide {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.animate-led-flow {
+  background: linear-gradient(
+    90deg,
+    #facc15 0%,
+    #f59e0b 20%,
+    #06b6d4 40%,
+    #10b981 60%,
+    #3b82f6 80%,
+    #facc15 100%
+  );
+  background-size: 200% auto;
+  color: transparent !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  animation: led-flow-slide 4s linear infinite;
+  display: inline-block;
+  text-shadow: 0 0 15px rgba(245, 158, 11, 0.15); /* Gives a premium glowing lightbulb aura */
+}
+
+
+/* Spin on hover for reset button */
+@keyframes spin-once {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+.animate-spin-hover:hover {
+  animation: spin-once 0.5s ease-in-out;
+}
+
+/* Fade in animation */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out forwards;
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0e14;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== 宋体厚重 + 逐字 RGB 流彩（Hero 5.0 文案） ===== */
+.rgb-text-block {
+  font-family: "SimSun", "STSong", "Songti SC", "Noto Serif SC", "Source Han Serif SC", "宋体", serif;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  line-height: 2;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+}
+
+.rgb-char {
+  display: inline-block;
+  animation: rgb-char-cycle 6s linear infinite;
+  /* 同色系微光晕，强化发光质感 */
+  text-shadow: 0 0 8px currentColor;
+  will-change: color;
+}
+
+/* 全色相循环：红→橙→黄→绿→青→蓝→紫→红 */
+@keyframes rgb-char-cycle {
+  0%   { color: hsl(0,   100%, 62%); }
+  14%  { color: hsl(40,  100%, 60%); }
+  28%  { color: hsl(80,  100%, 58%); }
+  42%  { color: hsl(140, 100%, 58%); }
+  56%  { color: hsl(185, 100%, 60%); }
+  70%  { color: hsl(220, 100%, 65%); }
+  84%  { color: hsl(285, 100%, 66%); }
+  100% { color: hsl(360, 100%, 62%); }
+}
+
+/* 尊重用户的减少动态偏好 */
+@media (prefers-reduced-motion: reduce) {
+  .rgb-char { animation: none; color: hsl(45, 100%, 62%); }
+}
+
+/* =====================================================
+   LED 七彩变色灯带（Hero 区顶部装饰条）
+   ===================================================== */
+
+/* 单个 LED 灯珠：全色相循环 + 发光呼吸 */
+@keyframes led-dot-cycle {
+  0%   {
+    background-color: hsl(0,   100%, 55%);
+    box-shadow: 0 0 4px  hsl(0,   100%, 55%), 0 0 10px hsl(0,   100%, 45%);
+  }
+  16%  {
+    background-color: hsl(60,  100%, 55%);
+    box-shadow: 0 0 4px  hsl(60,  100%, 55%), 0 0 10px hsl(60,  100%, 45%);
+  }
+  33%  {
+    background-color: hsl(120, 100%, 55%);
+    box-shadow: 0 0 4px  hsl(120, 100%, 55%), 0 0 10px hsl(120, 100%, 45%);
+  }
+  50%  {
+    background-color: hsl(180, 100%, 58%);
+    box-shadow: 0 0 4px  hsl(180, 100%, 58%), 0 0 10px hsl(180, 100%, 48%);
+  }
+  66%  {
+    background-color: hsl(240, 100%, 65%);
+    box-shadow: 0 0 4px  hsl(240, 100%, 65%), 0 0 10px hsl(240, 100%, 55%);
+  }
+  83%  {
+    background-color: hsl(300, 100%, 60%);
+    box-shadow: 0 0 4px  hsl(300, 100%, 60%), 0 0 10px hsl(300, 100%, 50%);
+  }
+  100% {
+    background-color: hsl(360, 100%, 55%);
+    box-shadow: 0 0 4px  hsl(360, 100%, 55%), 0 0 10px hsl(360, 100%, 45%);
+  }
+}
+
+.led-dot {
+  animation: led-dot-cycle 3s linear infinite;
+  will-change: background-color, box-shadow;
+}
+
+/* 扫描光束：一道高光从左到右反复划过 */
+@keyframes led-scan {
+  0%   { transform: translateX(-120%); opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { transform: translateX(120%); opacity: 0; }
+}
+
+.led-scan-beam {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.04) 35%,
+    rgba(255, 255, 255, 0.18) 50%,
+    rgba(255, 255, 255, 0.04) 65%,
+    transparent 100%
+  );
+  animation: led-scan 4s ease-in-out infinite;
+}
+
+/* 灯带整体：边缘微光脉冲 */
+@keyframes led-strip-pulse {
+  0%, 100% { box-shadow: inset 0 0 12px rgba(6, 182, 212, 0.06); }
+  50%      { box-shadow: inset 0 0 22px rgba(245, 158, 11, 0.10); }
+}
+
+.led-strip-container {
+  animation: led-strip-pulse 4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .led-dot,
+  .led-scan-beam,
+  .led-strip-container {
+    animation: none;
+  }
+  .led-dot {
+    background-color: #facc15;
+    box-shadow: 0 0 4px #facc15;
+  }
+}
+
