@@ -3,7 +3,6 @@ import { useNavigate, useLocation, Routes, Route, Navigate } from "react-router-
 import { motion } from "motion/react";
 import {
   Layers,
-  Compass,
   MapPin,
   Cpu,
   Flame,
@@ -40,7 +39,6 @@ import WorkflowPage from "./pages/WorkflowPage";
 import WorkflowDetailPage from "./pages/WorkflowDetailPage";
 import ServiceCategoryPage from "./pages/ServiceCategoryPage";
 import ShowcaseGallery from "./components/ShowcaseGallery";
-import BlueprintStudio from "./components/BlueprintStudio";
 import FireworksCanvas from "./components/FireworksCanvas";
 import HeaderModals from "./components/HeaderModals";
 import LoginModal from "./components/LoginModal";
@@ -86,28 +84,32 @@ function RgbParagraph({ text }: { text: string }) {
 }
 
 /**
- * LED 七彩变色灯带（Hero 顶部装饰）
- * 多颗灯珠独立循环色相，配合扫描光束划过，模拟 LED 灯带变色效果。
+ * 佛教风装饰分割线（Hero 顶部）
+ * 鎏金—朱红—鎏金 渐隐线 + 居中莲华宝相，替代原七彩 LED 灯带。
  */
-function LedColorStrip() {
-  const dotCount = 32;
+function TempleDivider() {
   return (
-    <div className="w-full h-9 rounded-xl bg-[#120e0b]/80 border border-neutral-800/70 led-strip-container overflow-hidden relative flex items-center justify-center gap-[3px] sm:gap-1 px-2 select-none pointer-events-none">
-      {/* 扫描光束 */}
-      <div className="led-scan-beam" />
-
-      {/* LED 灯珠阵列 */}
-      {Array.from({ length: dotCount }).map((_, i) => (
-        <div
-          key={i}
-          className="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full led-dot shrink-0"
-          style={{ animationDelay: `${i * 0.08}s` }}
-        />
-      ))}
-
-      {/* 左右两端装饰点 */}
-      <div className="absolute left-2 top-1/2 -translate-y-1/2 w-1 h-1 rounded-full bg-neutral-700" />
-      <div className="absolute right-2 top-1/2 -translate-y-1/2 w-1 h-1 rounded-full bg-neutral-700" />
+    <div className="w-full flex items-center justify-center gap-4 select-none pointer-events-none py-1">
+      <span className="h-px flex-1 temple-rule" />
+      <svg
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        className="text-yellow-500 shrink-0 animate-soft-breath"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        {/* 莲华：中心莲蓬 + 左右对称花瓣 */}
+        <path d="M12 21c-4.4 0-7.8-2.5-7.8-5.8 2.1 0 3.7.9 4.9 2.1 1.1-1.2 1.9-1.6 2.9-1.6s1.8.4 2.9 1.6c1.2-1.2 2.8-2.1 4.9-2.1 0 3.3-3.4 5.8-7.8 5.8Z" />
+        <path d="M12 15.7V4.5" />
+        <path d="M12 7.2c-1.5-1.3-1.5-3 0-4.2 1.5 1.1 1.5 2.8 0 4.2Z" />
+        <path d="M12 9c1.5-1.1 3.2-.9 4.1.3-1.3.9-2.8.9-4.1-.3Z" />
+        <path d="M12 9c-1.5-1.1-3.2-.9-4.1.3 1.3.9 2.8.9 4.1-.3Z" />
+      </svg>
+      <span className="h-px flex-1 temple-rule" />
     </div>
   );
 }
@@ -116,7 +118,7 @@ export default function App() {
   const { user, isLoggedIn, logout } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
-  const [activeTab, setActiveTab] = useState<'showcase' | 'studio'>('showcase');
+  const [activeTab, setActiveTab] = useState<'showcase'>('showcase');
   const [activeHeaderModal, setActiveHeaderModal] = useState<'art' | 'interview' | 'workflow' | null>(null);
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [isAdminDashboardOpen, setIsAdminDashboardOpen] = useState(false);
@@ -125,7 +127,7 @@ export default function App() {
   const [isHeroEditing, setIsHeroEditing] = useState(false);
   const [heroTitle, setHeroTitle] = useState(() => {
     const saved = localStorage.getItem('lumos_hero_title');
-    return saved || '用光重塑建筑的夜间灵魂';
+    return saved || '为寺院筑一方安住身心的净土';
   });
   const [heroParagraphs, setHeroParagraphs] = useState<string[]>(() => {
     const saved = localStorage.getItem('lumos_hero_paragraphs');
@@ -137,9 +139,9 @@ export default function App() {
       }
     }
     return [
-      '我们以客户需求为导向，以灯光创新为源泉，以光影赋能商业流量、激活区域经济为核心，迭代推出灯光设计 5.0 体系，彻底摒弃仅满足基础照明的落后设计思维。',
-      '灯光设计迭代划分：1.0 基础照明，仅实现空间可视；2.0 装饰亮化，侧重外观美化；3.0 氛围营造，塑造空间情绪；4.0 演艺光影，打造沉浸式视觉展演；5.0 流量型光影生态，融合文化叙事、交互体验与商业价值，让光影成为驱动产业发展的核心载体。',
-      '我们深耕全域光影创意研发，依托前沿光影技术构建系统化解决方案，以兼具人文质感与商业效能的光影体系赋予空间长效内生价值，以精简集约的投入成本，为甲方持续拉动区域市场活力。'
+      '禅境设计专注汉传、藏传、南传佛教寺院与道教宫观的整体营造，从总体规制、空间秩序到材质工艺，皆以形制法度为根、以禅意美学为用。',
+      '我们主张古建零损伤干预：以非破坏性张力抱箍承载灯具与设备，保护彩绘与榫卯；以暖色低色温光突出木构层次，见光不见灯，让殿宇在夜色中更显肃穆庄严。',
+      '从概念方案、施工图到落地营造，全流程一体化服务，让每一座寺院在当代仍保有安详、克制而有序的精神气场。'
     ];
   });
 
@@ -256,8 +258,8 @@ export default function App() {
       {!isSubPage && (
         <Seo
           title="寺庙佛教设计-专业寺庙设计|汉传佛教设计|道教宫观设计|寺庙建筑设计"
-          description="寺庙佛教设计专注专业寺庙设计，提供汉传佛教设计、道教宫观设计、藏传佛教设计、南传佛教设计、寺庙建筑设计、寺庙室内设计、寺庙软装设计、寺庙造型雕塑设计、寺庙景观设计、寺庙灯光设计。形制合规，全流程一体化设计服务。"
-          keywords="寺庙设计,专业寺庙设计,汉传佛教设计,道教宫观设计,藏传佛教设计,南传佛教设计,寺庙建筑设计,寺庙室内设计,寺庙软装设计,寺庙造型雕塑设计,寺庙景观设计,寺庙灯光设计,寺院规划设计,宗教建筑设计,寺庙设计院,佛教建筑设计,道教建筑设计,禅宗寺院设计,藏式寺院设计,南传佛寺设计,寺庙修缮设计,寺庙灯光设计,古建寺庙亮化,佛像设计,寺庙软装陈设"
+          description="禅境设计 ZENSPACE DESIGN 专注专业寺庙设计与佛教建筑设计，提供汉传佛教、道教宫观、藏传佛教、南传佛教寺院，以及寺庙建筑、室内、软装、雕塑、景观、灯光的全流程一体化设计。形制合规、禅意美学、古建零损伤营造。"
+          keywords="寺庙设计,寺院设计,佛教建筑设计,汉传佛教设计,道教宫观设计,藏传佛教设计,南传佛教设计,寺庙建筑设计,寺庙室内设计,寺庙软装设计,寺庙造型雕塑设计,寺庙景观设计,寺庙灯光设计,禅意设计,寺庙效果图,寺院规划设计,宗教建筑设计,寺庙设计院,佛教建筑设计"
           path="/"
           faq={[
             { q: '寺庙设计项目一般报价区间是多少？', a: '寺庙佛教设计根据形制、规模、选材与设计深度分档报价，从概念方案到施工图全程一体化服务，单体项目可按殿堂计费或按整体院落面积计费。' },
@@ -281,7 +283,7 @@ export default function App() {
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate('/')}>
             <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-yellow-500 via-amber-600 to-yellow-400 p-0.5 shadow-lg shadow-yellow-500/10 flex items-center justify-center">
               <div className="w-full h-full bg-[#120e0b] rounded-[10px] flex items-center justify-center">
-                <span className="text-yellow-400 font-mono font-bold text-base leading-none">光</span>
+                <span className="text-yellow-400 font-kai font-bold text-lg leading-none">禅</span>
               </div>
             </div>
             <div>
@@ -293,7 +295,7 @@ export default function App() {
                   寺庙佛教设计版
                 </span>
               </div>
-              <p className="text-[10px] text-neutral-500 mt-0.5 font-mono">高端户外建筑及地标景观灯光策划平台</p>
+              <p className="text-[10px] text-neutral-500 mt-0.5 font-mono">专业寺庙 · 宗教建筑空间一体化设计机构</p>
             </div>
           </div>
 
@@ -621,27 +623,14 @@ export default function App() {
                 }`}
               >
                 <Layers className="w-3.5 h-3.5" />
-                高定七大领域展廊
-              </button>
-              
-              <button
-                id="tab-btn-studio"
-                onClick={() => setActiveTab('studio')}
-                className={`flex-1 sm:flex-initial px-5 py-2.5 rounded-xl text-xs font-semibold flex items-center justify-center gap-2 transition-all cursor-pointer ${
-                  activeTab === 'studio'
-                    ? "bg-gradient-to-r from-neutral-900 to-neutral-850 border border-cyan-500/30 text-[#c2452b] shadow-md"
-                    : "text-neutral-400 hover:text-neutral-200"
-                }`}
-              >
-                <Compass className="w-3.5 h-3.5" />
-                科技与产品运用
+                十一大业务展廊
               </button>
             </div>
 
             {/* Accent helper tip */}
             <div className="flex items-center gap-2 text-xs text-neutral-500 font-mono">
               <Leaf className="w-4 h-4 text-emerald-500 animate-pulse" />
-              <span>暗天空(Dark Sky)保护标准 100% 贯入</span>
+              <span>形制合规 · 禅意美学 · 全案营造</span>
             </div>
           </div>
 
@@ -656,16 +645,6 @@ export default function App() {
                 <ShowcaseGallery />
               </motion.div>
             )}
-
-            {activeTab === 'studio' && (
-              <motion.div
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4 }}
-              >
-                <BlueprintStudio />
-              </motion.div>
-            )}
           </div>
         </section>
 
@@ -677,6 +656,26 @@ export default function App() {
             <div className="absolute inset-0 z-0">
               <FireworksCanvas />
             </div>
+
+            {/* 莲华曼陀罗淡纹水印 */}
+            <svg
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[460px] h-[460px] opacity-[0.05] text-yellow-500 pointer-events-none z-0"
+              viewBox="0 0 200 200"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="0.8"
+            >
+              <circle cx="100" cy="100" r="92" />
+              <circle cx="100" cy="100" r="72" />
+              <circle cx="100" cy="100" r="52" />
+              <circle cx="100" cy="100" r="30" />
+              {Array.from({ length: 12 }).map((_, i) => (
+                <line key={i} x1="100" y1="8" x2="100" y2="192" transform={`rotate(${i * 30} 100 100)`} />
+              ))}
+              {Array.from({ length: 8 }).map((_, i) => (
+                <ellipse key={i} cx="100" cy="50" rx="13" ry="34" transform={`rotate(${i * 45} 100 100)`} />
+              ))}
+            </svg>
 
             {/* 管理员编辑/删除文字按钮（登录后可见，localStorage 自动保存） */}
             {isLoggedIn && (
@@ -704,13 +703,13 @@ export default function App() {
 
             {/* Content overlay */}
             <div className={`relative z-10 flex flex-col gap-4 ${isHeroEditing ? 'pointer-events-auto' : 'pointer-events-none'}`}>
-              {/* LED 变色灯带装饰 */}
-              <LedColorStrip />
+              {/* 佛教风莲华分割线（替代原七彩 LED 灯带） */}
+              <TempleDivider />
 
               <div className="flex items-center gap-2">
                 <Award className="w-4 h-4 text-yellow-400 animate-pulse" />
                 <span className="font-mono text-[10px] tracking-widest text-[#c2452b] uppercase font-semibold">
-                  LIGHTING ARCHITECTURE / 赋建筑夜景第二生命
+                  ZENSPACE TEMPLE / 寺院空间 · 禅意营造
                 </span>
               </div>
 
@@ -753,26 +752,26 @@ export default function App() {
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-neutral-900 pt-10">
           
           <div className="p-5 bg-neutral-950/40 border border-neutral-900 rounded-2xl flex flex-col gap-2">
-            <span className="font-mono text-[9px] uppercase tracking-widest text-yellow-400">01 / 見光不見灯 (Invisibility)</span>
-            <h4 className="text-base font-semibold text-neutral-100">极致深藏与防眩</h4>
+            <span className="font-mono text-[9px] uppercase tracking-widest text-yellow-400">01 / 形制法度 (Form & Rite)</span>
+            <h4 className="text-base font-semibold text-neutral-100">依制而筑，不逾规矩</h4>
             <p className="text-xs text-neutral-400 leading-relaxed mt-1">
-              通过灯具在型材下凹深藏埋置、加装高密度六角铝制蜂窝防眩网，确保在各种视点，人眼15度视线内几乎不产生亮斑反射眩光。
+              寺院以中轴对称、院落递进为骨，汉传、藏传、南传各有规制。我们依形制法度落笔，从总体格局到细部比例皆循礼法，杜绝任意发挥。
             </p>
           </div>
 
           <div className="p-5 bg-neutral-950/40 border border-neutral-900 rounded-2xl flex flex-col gap-2">
-            <span className="font-mono text-[9px] uppercase tracking-widest text-[#c2452b]">02 / 慢节律时节调光 (Regulated)</span>
-            <h4 className="text-base font-semibold text-neutral-100">动态与双碳能耗规划</h4>
+            <span className="font-mono text-[9px] uppercase tracking-widest text-[#c2452b]">02 / 禅意空间 (Zen Space)</span>
+            <h4 className="text-base font-semibold text-neutral-100">留白与暖光，见光不见灯</h4>
             <p className="text-xs text-neutral-400 leading-relaxed mt-1">
-              利用KNX和DALI数智总线协议，分平日、节日及深夜多时段调节。深夜22:30后自动退晕弱化，降幅功耗超六成，契合国家低碳双控白皮书。
+              以留白、暖色低色温光与天然材质营造静谧，灯具深藏不显，让光成为礼敬而非喧哗，使殿宇在夜色中更显肃穆庄严。
             </p>
           </div>
 
           <div className="p-5 bg-neutral-950/40 border border-neutral-900 rounded-2xl flex flex-col gap-2">
-            <span className="font-mono text-[9px] uppercase tracking-widest text-purple-400">03 / 历史文脉重塑 (Heritage)</span>
-            <h4 className="text-base font-semibold text-neutral-100">古建石木零伤夹箍</h4>
+            <span className="font-mono text-[9px] uppercase tracking-widest text-purple-400">03 / 文脉传承 (Heritage)</span>
+            <h4 className="text-base font-semibold text-neutral-100">古建零损伤，法脉永续</h4>
             <p className="text-xs text-neutral-400 leading-relaxed mt-1">
-              对古老彩绘和榫卯木作进行保护，使用专利非破坏性张力抱箍进行承载，选择不含紫外、蓝光波谱窄幅高饱色温LED保护原漆与彩画。
+              对古老彩绘与榫卯木作施行非破坏性保护，以张力抱箍零损伤承载设备，让千年法脉在当代营造中安然延续。
             </p>
           </div>
         </section>

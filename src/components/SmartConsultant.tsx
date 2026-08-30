@@ -87,7 +87,7 @@ export default function SmartConsultant() {
         body: JSON.stringify({
           contents: [{
             parts: [{
-              text: `你是一位资深户外灯光设计顾问。根据以下参数，生成一份专业照明设计方案。
+              text: `你是一位资深寺庙与佛教建筑设计顾问。根据以下参数，生成一份专业寺庙建筑与宗教空间设计方案。
 
 载体类型：${payload.spaceType}
 核心建材：${payload.materials}

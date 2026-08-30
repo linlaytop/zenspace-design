@@ -34,7 +34,7 @@ export default function Seo({
   faq,
 }: SeoProps) {
   const fullUrl = `${BASE_URL}${path}`;
-  const fullTitle = title.length > 30 ? title : `${title} | 寺庙佛教设计灯光设计`;
+  const fullTitle = title.length > 30 ? title : `${title} | 寺庙佛教设计 ZENSPACE DESIGN`;
 
   // 面包屑结构化数据
   const breadcrumbItems = [
