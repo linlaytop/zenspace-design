@@ -318,7 +318,7 @@ const ROUTES = [
         <section><h2>二、中轴对称：院落序列的礼制</h2><p>中轴对称是汉传寺院最鲜明的空间特征。主轴自南向北为山门→天王殿→大雄宝殿→法堂→藏经楼，东西配殿对称布置，强化宗教空间的秩序感。</p></section>
         <section><h2>三、木构大殿的等级秩序</h2><ul><li>屋顶等级：庑殿顶>歇山顶>悬山顶>硬山顶</li><li>开间等级：最高九开间，常规大殿五至七开间</li><li>斗拱出跳：出跳越多等级越高</li><li>举折与翼角由营造法式材分推算</li></ul></section>
         <section><h2>四、现代规范与古建的融合</h2><p>汉传寺院须满足 GB 50016 防火、GB 50763 无障碍等规范。难点在消防与古建风貌冲突，解决办法是隐蔽式设计：喷淋藏于吊顶墙体、消防车道结合景观铺装。</p></section>
-        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="/service/han-buddhist-temple-design">汉传佛教设计</a>、<a href="/service/temple-architecture-design">寺庙建筑设计</a>、<a href="/service/temple-interior-design">寺庙室内设计</a>。</p></section>
+        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="../../service/han-buddhist-temple-design">汉传佛教设计</a>、<a href="../../service/temple-architecture-design">寺庙建筑设计</a>、<a href="../../service/temple-interior-design">寺庙室内设计</a>。</p></section>
       </main>`,
   },
   {
@@ -335,7 +335,7 @@ const ROUTES = [
         <section><h2>二、神阶秩序：建筑等级与所奉神阶匹配</h2><p>道教宫观按所奉神阶确定建筑等级与方位。三清、玉皇等主神殿宇等级最高，斋醮科仪坛场需预留法事空间与朝拜动线。</p></section>
         <section><h2>三、山地台地处理</h2><ul><li>依等高线分层筑台，减少大挖大填</li><li>台基挡墙采用本地石材，与山势肌理一致</li><li>边坡支护与排水先完成地勘与稳定性评估</li></ul></section>
         <section><h2>四、材料与色彩：素朴为上</h2><p>道观常用青瓦、素墙、赭石与木质原色，色彩较佛寺更为素朴内敛，木构件多做生漆或桐油处理。</p></section>
-        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="/service/taoist-temple-design">道教宫观设计</a>、<a href="/service/temple-landscape-design">寺庙景观设计</a>、<a href="/service/temple-architecture-design">寺庙建筑设计</a>。</p></section>
+        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="../../service/taoist-temple-design">道教宫观设计</a>、<a href="../../service/temple-landscape-design">寺庙景观设计</a>、<a href="../../service/temple-architecture-design">寺庙建筑设计</a>。</p></section>
       </main>`,
   },
   {
@@ -352,7 +352,7 @@ const ROUTES = [
         <section><h2>二、收分墙体与平顶碉房</h2><p>高原强风、强紫外与温差大，催生藏式典型语汇：下宽上窄的收分墙体增强稳定，平顶碉房减少风荷，厚墙小窗保温隔热。</p></section>
         <section><h2>三、大经堂的声学与采光</h2><ul><li>大经堂需控制混响时间与语言清晰度</li><li>高侧窗与天窗解决天然采光，避免眩光</li><li>柱网密、跨度大，常采用钢木组合结构</li></ul></section>
         <section><h2>四、佛塔（覆钵式塔）</h2><p>覆钵式塔由塔基、塔身（覆钵）、塔刹（相轮）组成，比例与象征意义须严格遵循仪轨，照明常做竖向分层投光。</p></section>
-        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="/service/tibetan-buddhist-temple-design">藏传佛教设计</a>、<a href="/service/temple-sculpture-design">寺庙造型雕塑设计</a>、<a href="/service/temple-architecture-design">寺庙建筑设计</a>。</p></section>
+        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="../../service/tibetan-buddhist-temple-design">藏传佛教设计</a>、<a href="../../service/temple-sculpture-design">寺庙造型雕塑设计</a>、<a href="../../service/temple-architecture-design">寺庙建筑设计</a>。</p></section>
       </main>`,
   },
   {
@@ -369,7 +369,7 @@ const ROUTES = [
         <section><h2>二、独立戒堂（波松）</h2><p>戒堂是南传佛寺核心礼制空间，用于比丘受戒与重要法事，通常独立设置、体量精致，四周开窗保证通风。</p></section>
         <section><h2>三、干栏式构造</h2><ul><li>底层架空，防潮通风防虫蛇，常用于僧舍</li><li>主殿亦常抬高基座，减少地面湿气侵蚀</li><li>材料多用本地硬木与竹，注重防腐防虫</li></ul></section>
         <section><h2>四、色彩与装饰</h2><p>南传佛寺善用金、红、白对比，墙面多白或暖黄，屋顶金饰璀璨，与热带植被形成强烈而和谐的色彩关系。</p></section>
-        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="/service/theravada-buddhist-temple-design">南传佛教设计</a>、<a href="/service/temple-architecture-design">寺庙建筑设计</a>。</p></section>
+        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="../../service/theravada-buddhist-temple-design">南传佛教设计</a>、<a href="../../service/temple-architecture-design">寺庙建筑设计</a>。</p></section>
       </main>`,
   },
   {
@@ -385,7 +385,7 @@ const ROUTES = [
         <section><h2>一、佛殿室内：以佛坛为中心</h2><ul><li>佛坛为绝对视觉中心，背景墙强化尊像层次</li><li>礼佛空间地面平整、照度低而均匀，避免眩光</li><li>柱网开间避让主尊礼佛视线，保证中轴对位</li></ul></section>
         <section><h2>二、禅堂：静穆与声学</h2><p>禅堂强调静穆，材料以素木、麻、石哑光质感为主，声学上控制混响，避免空旷回响破坏禅修氛围。</p></section>
         <section><h2>三、经堂与客堂斋堂</h2><ul><li>经堂：经柜布置、诵经席位整齐与采光</li><li>客堂：接待与法务办公，兼顾庄重与实用</li><li>斋堂：过堂用斋的行列秩序与便捷供餐动线</li></ul></section>
-        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="/service/temple-interior-design">寺庙室内设计</a>、<a href="/service/temple-furnishing-design">寺庙软装设计</a>。</p></section>
+        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="../../service/temple-interior-design">寺庙室内设计</a>、<a href="../../service/temple-furnishing-design">寺庙软装设计</a>。</p></section>
       </main>`,
   },
   {
@@ -401,7 +401,7 @@ const ROUTES = [
         <section><h2>一、经幡与幢幡</h2><ul><li>经幡依五色方位悬挂，传递经文与祈愿</li><li>幢幡为殿堂庄严之具，材质纹样与悬挂位次有定式</li><li>汉传多悬幢盖宝盖，藏传多悬经幡胜幢</li></ul></section>
         <section><h2>二、供具与法器</h2><p>供桌、香炉、烛台、供杯、木鱼、引磬等供具法器，其形制材质与摆放位次均依仪轨，供台高度与供品陈列为设计重点。</p></section>
         <section><h2>三、帷幔坐具与节庆陈设</h2><ul><li>佛坛帷幔、柱披以织锦为主，色彩与殿堂等级对应</li><li>禅垫拜垫形制与编排兼顾礼佛与坐禅</li><li>节庆场景陈设需可快速搭建与撤除</li></ul></section>
-        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="/service/temple-furnishing-design">寺庙软装设计</a>、<a href="/service/temple-sculpture-design">寺庙造型雕塑设计</a>。</p></section>
+        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="../../service/temple-furnishing-design">寺庙软装设计</a>、<a href="../../service/temple-sculpture-design">寺庙造型雕塑设计</a>。</p></section>
       </main>`,
   },
   {
@@ -417,7 +417,7 @@ const ROUTES = [
         <section><h2>一、庭院与放生池</h2><ul><li>放生池多居前庭或中庭，水面倒映殿宇增强静穆</li><li>池岸以自然石驳岸为主，忌生硬混凝土直壁</li><li>叠石置石取法自然，忌堆砌对称呆板</li></ul></section>
         <section><h2>二、香道与步道</h2><p>香道是信众礼佛主路径，铺装宜平整防滑、尺度宜人，两侧以乔木形成林荫与仪式感，夜间低位照明保证安全。</p></section>
         <section><h2>三、植物选择原则</h2><ul><li>多用松、柏、银杏、香樟等具文化内涵的树种</li><li>避免易落果、招虫、带刺植物临近礼佛动线</li><li>季相搭配维持全年景观层次</li></ul></section>
-        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="/service/temple-landscape-design">寺庙景观设计</a>、<a href="/service/temple-lighting-design">寺庙灯光设计</a>。</p></section>
+        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="../../service/temple-landscape-design">寺庙景观设计</a>、<a href="../../service/temple-lighting-design">寺庙灯光设计</a>。</p></section>
       </main>`,
   },
   {
@@ -433,7 +433,7 @@ const ROUTES = [
         <section><h2>一、中轴对称与三进二井</h2><ul><li>中轴对称：门屋—享堂—寝堂三进序列</li><li>二井（天井）分隔前后进，解决采光通风并形成仪式节奏</li><li>享堂为祭祖行礼主体，空间高敞、用材隆重</li></ul></section>
         <section><h2>二、昭穆位次：牌位的秩序</h2><p>神主牌位按昭穆之制排列：始祖居中，左昭右穆、父昭子穆，世代递迁。神龛形制高度与开启方式须遵循族规与礼制。</p></section>
         <section><h2>三、复合功能分区</h2><ul><li>祭祀区：享堂与寝堂，庄严肃穆</li><li>议事区：厢房偏厅，用于族事商议与教化</li><li>展示区：匾额、楹联、族谱陈列，传承家风</li></ul></section>
-        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="/service/ancestral-hall-space-design">祠堂空间设计</a>、<a href="/service/temple-architecture-design">寺庙建筑设计</a>。</p></section>
+        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="../../service/ancestral-hall-space-design">祠堂空间设计</a>、<a href="../../service/temple-architecture-design">寺庙建筑设计</a>。</p></section>
       </main>`,
   },
   {
@@ -449,7 +449,7 @@ const ROUTES = [
         <section><h2>一、传统风水要诀</h2><ul><li>背倚主山，左右砂山环抱，前方案山朝山呼应</li><li>面水（明堂水），忌直冲风口与反弓水</li><li>左青龙右白虎，地势宜东高西缓、北高南低</li></ul></section>
         <section><h2>二、现代场地条件校验</h2><p>风水格局需落到工程现实：地勘确认地基承载力与边坡稳定，水文确认排水与防洪，交通确认施工便道与信众动线。</p></section>
         <section><h2>三、山地项目的特殊考量</h2><ul><li>先做边坡稳定性评估，再定台地与建筑落位</li><li>台地筑坝与挡墙需与景观一体化设计</li><li>防洪标高须高于历史水位，预留泄洪通道</li></ul></section>
-        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="/service/temple-architecture-design">寺庙建筑设计</a>、<a href="/service/taoist-temple-design">道教宫观设计</a>。</p></section>
+        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="../../service/temple-architecture-design">寺庙建筑设计</a>、<a href="../../service/taoist-temple-design">道教宫观设计</a>。</p></section>
       </main>`,
   },
   {
@@ -465,7 +465,7 @@ const ROUTES = [
         <section><h2>一、造价的主要构成</h2><ul><li>结构主体：木构>钢木组合>混凝土仿古</li><li>传统工艺：木作、瓦作、彩画、石作，人工占比高</li><li>设备与消防：隐蔽式消防、无障碍、智能化</li><li>景观与灯光：庭院、水景、夜景亮化</li></ul></section>
         <section><h2>二、预算编制要点</h2><p>传统工艺常无对应工程定额，需单独编制工艺说明与单价分析。建议设计阶段同步出物料清单与概算，避免施工阶段大幅超支。</p></section>
         <section><h2>三、降本增效的务实策略</h2><ul><li>新建部分外观保形制、结构用现代材料</li><li>文物部分严格传统工艺，范围从严控制</li><li>关键工艺先打样，避免大面积返工</li><li>分批建设，优先完成礼佛核心区</li></ul></section>
-        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="/service/temple-architecture-design">寺庙建筑设计</a>、<a href="/service/temple-interior-design">寺庙室内设计</a>。</p></section>
+        <section><h2>相关寺庙设计服务</h2><p>深入了解：<a href="../../service/temple-architecture-design">寺庙建筑设计</a>、<a href="../../service/temple-interior-design">寺庙室内设计</a>。</p></section>
       </main>`,
   },
   {

@@ -125,49 +125,7 @@
     <mobile:mobile type="pc,mobile"/>
   </url>
 
-  <!-- 营造实录详情页 -->
-  <url>
-    <loc>https://zenspace-design.cn/art/0</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://zenspace-design.cn/art/1</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://zenspace-design.cn/art/2</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://zenspace-design.cn/art/3</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://zenspace-design.cn/art/4</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://zenspace-design.cn/art/5</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
+  <!-- 营造实录详情页 (/art/0~5) 为 SPA 客户端路由，github.io 无 SPA 回退会 404，暂不收录 sitemap -->
 
   <!-- 筹建方访谈列表页 -->
   <url>
@@ -178,42 +136,7 @@
     <mobile:mobile type="pc,mobile"/>
   </url>
 
-  <!-- 筹建方访谈详情页 -->
-  <url>
-    <loc>https://zenspace-design.cn/interview/0</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://zenspace-design.cn/interview/1</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://zenspace-design.cn/interview/2</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://zenspace-design.cn/interview/3</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://zenspace-design.cn/interview/4</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
+  <!-- 筹建方访谈详情页 (/interview/0~4) 为 SPA 客户端路由，github.io 无 SPA 回退会 404，暂不收录 sitemap -->
 
   <!-- 服务流程页 -->
   <url>
@@ -224,49 +147,7 @@
     <mobile:mobile type="pc,mobile"/>
   </url>
 
-  <!-- 服务流程详情页 -->
-  <url>
-    <loc>https://zenspace-design.cn/workflow/0</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://zenspace-design.cn/workflow/1</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://zenspace-design.cn/workflow/2</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://zenspace-design.cn/workflow/3</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://zenspace-design.cn/workflow/4</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://zenspace-design.cn/workflow/5</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
+  <!-- 服务流程详情页 (/workflow/0~5) 为 SPA 客户端路由，github.io 无 SPA 回退会 404，暂不收录 sitemap -->
 
   <!-- ===== 寺庙设计服务分类页（核心业务页，11个）===== -->
 
