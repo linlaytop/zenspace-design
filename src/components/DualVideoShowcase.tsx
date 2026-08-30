@@ -31,9 +31,9 @@ export interface DualVideoSlot {
 const DEFAULT_SLOTS: DualVideoSlot[] = [
   {
     id: 1,
-    title: "《文旅光影》沉浸式夜游演艺实录",
-    location: "中国张家界 · 森林景区主游路线",
-    notes: "雷达交互 + 绿极光投影 + 林间雾森系统，构建全域文旅光影创新美学体系。",
+    title: "《月照宝殿》古建寺庙整体亮化实录",
+    location: "中国浙江 · 某全国重点文保寺院",
+    notes: "大殿屋顶、檐口、斗拱分层投光强化木构层次，统一 2200K 暖色温，全部非破坏性抱箍承载，智能分时节能 42%。",
     mediaUrl: "https://player.vimeo.com/external/498902517.sd.mp4?s=d07525ec900350a2ebd901c23f993f773410e309&profile_id=165&oauth2_token_id=57447761",
     mediaType: "video"
   },

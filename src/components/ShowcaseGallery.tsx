@@ -243,7 +243,7 @@ export function getSafeBlobUrl(url: string): string {
 
 export default function ShowcaseGallery() {
   const { isLoggedIn } = useAuth();
-  const [selectedCatId, setSelectedCatId] = useState<string>("cultural-tourism"); // Default to first lighting category
+  const [selectedCatId, setSelectedCatId] = useState<string>("han-buddhist-temple-design"); // Default to first temple category
   const [customImages, setCustomImages] = useState<Record<string, string>>(() => {
     try {
       const saved = localStorage.getItem("lumos_custom_images_by_cat");
@@ -937,27 +937,29 @@ export default function ShowcaseGallery() {
                   id={`cat-btn-${cat.id}`}
                   onClick={() => {
                     setSelectedCatId(cat.id);
-                    // Setup typical starting params based on selected category types
-                    if (cat.id === "cultural-tourism") {
-                      setParams({ temperature: 4200, intensity: 85, color: "rgba(156, 122, 84, 0.4)", animationMode: "chase" });
-                    } else if (cat.id === "ancient") {
-                      setParams({ temperature: 2200, intensity: 65, color: "rgba(212, 164, 65, 0.4)", animationMode: "breath" });
-                    } else if (cat.id === "water-show") {
-                      setParams({ temperature: 6000, intensity: 90, color: "rgba(155, 122, 81, 0.45)", animationMode: "chase" });
-                    } else if (cat.id === "hotel") {
-                      setParams({ temperature: 3000, intensity: 80, color: "rgba(227, 186, 95, 0.3)", animationMode: "breath" });
-                    } else if (cat.id === "exhibition-hall") {
-                      setParams({ temperature: 3500, intensity: 75, color: "rgba(212, 164, 65, 0.25)", animationMode: "breath" });
-                    } else if (cat.id === "office") {
-                      setParams({ temperature: 4500, intensity: 85, color: "rgba(244, 196, 184, 0.3)", animationMode: "breath" });
-                    } else if (cat.id === "garden") {
-                      setParams({ temperature: 3500, intensity: 70, color: "rgba(244, 196, 184, 0.2)", animationMode: "breath" });
-                    } else if (cat.id === "star-path") {
-                      setParams({ temperature: 2400, intensity: 60, color: "rgba(227, 186, 95, 0.2)", animationMode: "breath" });
-                    } else if (cat.id === "art-installation") {
-                      setParams({ temperature: 3200, intensity: 85, color: "rgba(156, 122, 84, 0.4)", animationMode: "chase" });
+                    // 为各寺庙分类设置典型灯光预览参数（暖色温 + 静穆呼吸/静态模式）
+                    if (cat.id === "han-buddhist-temple-design") {
+                      setParams({ temperature: 2200, intensity: 70, color: "rgba(194, 69, 43, 0.35)", animationMode: "breath" });
+                    } else if (cat.id === "taoist-temple-design") {
+                      setParams({ temperature: 2000, intensity: 65, color: "rgba(212, 164, 65, 0.35)", animationMode: "breath" });
+                    } else if (cat.id === "tibetan-buddhist-temple-design") {
+                      setParams({ temperature: 1800, intensity: 60, color: "rgba(120, 82, 32, 0.35)", animationMode: "breath" });
+                    } else if (cat.id === "theravada-buddhist-temple-design") {
+                      setParams({ temperature: 2400, intensity: 75, color: "rgba(244, 196, 184, 0.3)", animationMode: "breath" });
+                    } else if (cat.id === "temple-architecture-design") {
+                      setParams({ temperature: 2200, intensity: 70, color: "rgba(212, 164, 65, 0.35)", animationMode: "breath" });
+                    } else if (cat.id === "temple-interior-design") {
+                      setParams({ temperature: 2200, intensity: 65, color: "rgba(194, 69, 43, 0.35)", animationMode: "static" });
+                    } else if (cat.id === "temple-furnishing-design") {
+                      setParams({ temperature: 2000, intensity: 60, color: "rgba(212, 164, 65, 0.3)", animationMode: "static" });
+                    } else if (cat.id === "temple-sculpture-design") {
+                      setParams({ temperature: 2200, intensity: 75, color: "rgba(194, 69, 43, 0.35)", animationMode: "pulse" });
+                    } else if (cat.id === "temple-landscape-design") {
+                      setParams({ temperature: 2400, intensity: 70, color: "rgba(119, 140, 99, 0.3)", animationMode: "breath" });
+                    } else if (cat.id === "temple-lighting-design") {
+                      setParams({ temperature: 1800, intensity: 85, color: "rgba(212, 164, 65, 0.4)", animationMode: "breath" });
                     } else {
-                      setParams({ temperature: 3000, intensity: 80, color: "rgba(227, 186, 95, 0.35)", animationMode: "breath" });
+                      setParams({ temperature: 2200, intensity: 70, color: "rgba(212, 164, 65, 0.35)", animationMode: "breath" });
                     }
                   }}
                   className={`w-full text-left p-4 rounded-xl transition-all duration-300 border ${
@@ -1366,16 +1368,7 @@ export default function ShowcaseGallery() {
               />
             )}
 
-            {/* LIGHT VIRTUAL BEAM OVERLAY - GLOW FOR LIGHTSHOW & CULTURAL TOURISM */}
-            {(selectedCatId === "lightshow" || selectedCatId === "cultural-tourism") && params.intensity > 10 && (
-              <div 
-                className="absolute inset-x-0 bottom-0 top-1/4 bg-radial-glow pointer-events-none mix-blend-screen animate-soft-breath transition-opacity duration-700 z-10"
-                style={{
-                  background: `radial-gradient(ellipse at bottom, ${params.color}, transparent 60%)`,
-                  opacity: isNightMode ? 0.35 : 0
-                }}
-              />
-            )}
+            {/* LIGHT VIRTUAL BEAM OVERLAY — 已移除：寺庙分类不再需要秀场类光束叠层 */}
 
             {/* Dynamic Ambient Blur Halo */}
             <div 

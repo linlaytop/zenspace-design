@@ -4,7 +4,7 @@ interface SelectedCaseStudyProps {
   selectedCatId?: string;
 }
 
-export default function SelectedCaseStudy({ selectedCatId = "cultural-tourism" }: SelectedCaseStudyProps) {
+export default function SelectedCaseStudy({ selectedCatId = "han-buddhist-temple-design" }: SelectedCaseStudyProps) {
   const selectedCategory = LIGHTING_CATEGORIES.find(c => c.id === selectedCatId) || LIGHTING_CATEGORIES[0];
   const caseItem = selectedCategory?.cases?.[0];
   if (!caseItem) return null;

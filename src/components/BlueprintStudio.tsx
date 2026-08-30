@@ -80,21 +80,21 @@ const PRODUCTS_DATA = [
     applications: ["地标巨幕写字楼外网格屏", "钢索拉跨桥身流水动态虚抛线", "窗槛天花吊顶流畅防眩暗糟"]
   },
   {
-    id: "water",
-    name: "AquaLaser™ 巨型全息水幕激光发生系统",
-    englishName: "AquaLaser Giant Water Screen System",
-    icon: "💧",
-    tag: "水幕灯光秀",
+    id: "temple-shrine-light",
+    name: "古建抱箍式斗拱擦亮射灯（零损伤）",
+    englishName: "Heritage Shrink-Fit Eave Spotlight",
+    icon: "🏯",
+    tag: "古建寺庙亮化",
     specs: {
-      power: "30HP (喷泵系统) + 60W (全彩纯二极管)",
-      chip: "高振镜电磁控制片与立体折射透镜组",
-      beamAngle: "30° ~ 110° 全向高承压扇幅",
-      luminousFlux: "全彩高饱和超亮激光能量",
-      waterproof: "IP68 顶级防泥沙耐腐防卡自洁底座",
-      material: "316奥氏体海洋不锈钢 + 石英超硬窗口"
+      power: "9W (LED COB 暖古铜)",
+      chip: "微棱镜防眩透镜 + 张力抱箍承载",
+      beamAngle: "12° ~ 24° 窄角精准擦亮",
+      luminousFlux: "380 lm",
+      waterproof: "IP65 户外防潮阻燃",
+      material: "黄铜本色外壳 + 古铜色烤漆"
     },
-    description: "将水元素与极致极光的灵魂交融。通过高压离心泵将湖海水体瞬间击碎喷射，在水面上腾起一万平方米的高密度乳化水雾扇。高能纯色激光在此扇幕上高速偏转扫描出全彩3D全息立体图像（如神兽、浩瀚流光、城市律动）。",
-    applications: ["沿江滨水艺术画廊重大庆典", "人工湖喷泉中心数字故事演播", "沉浸式山水光影夜游大型景区"]
+    description: "专为古建寺庙殿宇设计的零损伤擦亮射灯。采用非破坏性张力抱箍承载，无需在古木砖石上打孔；1800K-2400K 暖古铜光突出木构彩画层次；微棱镜防眩，灯具深藏于斗拱、檐口凹槽内，符合见光不见灯原则。",
+    applications: ["全国重点文保寺院大殿檐口", "佛塔塔刹与斗拱分层擦亮", "藏式碉房收分墙与金顶法轮照明"]
   }
 ];
 
