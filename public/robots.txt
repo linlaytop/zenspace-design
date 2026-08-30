@@ -1,13 +1,13 @@
 ﻿# robots.txt - 百度SEO优化版
 # 创建日期：2026-07-07
-# 适用：户外灯光设计网站 (光影大师 LUMOS DESIGN)
+# 适用：户外灯光设计网站 (禅境设计 ZENSPACE DESIGN)
 
 # ============================================
 # 基础设置
 # ============================================
 
 # 网站地图位置 (百度推荐)
-Sitemap: https://lumos-design.cn/sitemap.xml
+Sitemap: https://zenspace-design.cn/sitemap.xml
 
 # 爬虫访问频率
 Crawl-delay: 1

@@ -67,12 +67,12 @@ export default function TechColumnPage() {
     <>
       <Seo
         title="技术专栏-户外灯光设计技术指南"
-        description="光影大师技术专栏，分享户外灯光设计技术指南、夜景照明行业趋势、DMX512控制系统、LED灯具选型、古建照明施工工艺等专业文章。"
+        description="禅境设计技术专栏，分享户外灯光设计技术指南、夜景照明行业趋势、DMX512控制系统、LED灯具选型、古建照明施工工艺等专业文章。"
         keywords="灯光设计技术,夜景照明技术,DMX512控制系统,LED户外照明,灯光设计指南,照明设计教程,古建照明技术,景观照明施工"
         path="/tech"
         breadcrumb={[{ name: '技术专栏', path: '/tech' }]}
       />
-    <div className="min-h-screen bg-[#070a0e] text-neutral-100">
+    <div className="min-h-screen bg-[#120e0b] text-neutral-100">
       {/* 顶部导航栏 - 与首页共享同一个 header，这里是页面内的面包屑 */}
       <div className="border-b border-neutral-900 bg-neutral-950/80 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">

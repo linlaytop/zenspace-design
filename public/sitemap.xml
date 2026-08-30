@@ -5,8 +5,8 @@
 
   <!-- 首页 (优先级最高) -->
   <url>
-    <loc>https://lumos-design.cn/</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://zenspace-design.cn/</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <mobile:mobile type="pc,mobile"/>
@@ -14,8 +14,8 @@
 
   <!-- 技术专栏列表页 -->
   <url>
-    <loc>https://lumos-design.cn/tech</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://zenspace-design.cn/tech</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <mobile:mobile type="pc,mobile"/>
@@ -23,306 +23,268 @@
 
   <!-- 技术专栏文章页 -->
   <url>
-    <loc>https://lumos-design.cn/tech/ancient-building-lighting-guide</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://zenspace-design.cn/tech/temple-architecture-design-guide</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile type="pc,mobile"/>
   </url>
   <url>
-    <loc>https://lumos-design.cn/tech/resort-lighting-design-trends</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://zenspace-design.cn/tech/temple-lighting-design-guide</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile type="pc,mobile"/>
   </url>
   <url>
-    <loc>https://lumos-design.cn/tech/dmx512-protocol-guide</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://zenspace-design.cn/tech/temple-design-approval-guide</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <mobile:mobile type="pc,mobile"/>
   </url>
 
-  <!-- 环球艺术创造力列表页 -->
+  <!-- 营造实录列表页 -->
   <url>
-    <loc>https://lumos-design.cn/art</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://zenspace-design.cn/art</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <mobile:mobile type="pc,mobile"/>
   </url>
 
-  <!-- 环球艺术创造力详情页 -->
+  <!-- 营造实录详情页 -->
   <url>
-    <loc>https://lumos-design.cn/art/0</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://zenspace-design.cn/art/0</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <mobile:mobile type="pc,mobile"/>
   </url>
   <url>
-    <loc>https://lumos-design.cn/art/1</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://zenspace-design.cn/art/1</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <mobile:mobile type="pc,mobile"/>
   </url>
   <url>
-    <loc>https://lumos-design.cn/art/2</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://zenspace-design.cn/art/2</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <mobile:mobile type="pc,mobile"/>
   </url>
   <url>
-    <loc>https://lumos-design.cn/art/3</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://zenspace-design.cn/art/3</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <mobile:mobile type="pc,mobile"/>
   </url>
   <url>
-    <loc>https://lumos-design.cn/art/4</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://zenspace-design.cn/art/4</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <mobile:mobile type="pc,mobile"/>
   </url>
   <url>
-    <loc>https://lumos-design.cn/art/5</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://zenspace-design.cn/art/5</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <mobile:mobile type="pc,mobile"/>
   </url>
 
-  <!-- 业主采访列表页 -->
+  <!-- 筹建方访谈列表页 -->
   <url>
-    <loc>https://lumos-design.cn/interview</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://zenspace-design.cn/interview</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <mobile:mobile type="pc,mobile"/>
   </url>
 
-  <!-- 业主采访详情页 -->
+  <!-- 筹建方访谈详情页 -->
   <url>
-    <loc>https://lumos-design.cn/interview/0</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://zenspace-design.cn/interview/0</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <mobile:mobile type="pc,mobile"/>
   </url>
   <url>
-    <loc>https://lumos-design.cn/interview/1</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://zenspace-design.cn/interview/1</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <mobile:mobile type="pc,mobile"/>
   </url>
   <url>
-    <loc>https://lumos-design.cn/interview/2</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://zenspace-design.cn/interview/2</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <mobile:mobile type="pc,mobile"/>
   </url>
   <url>
-    <loc>https://lumos-design.cn/interview/3</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://zenspace-design.cn/interview/3</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <mobile:mobile type="pc,mobile"/>
   </url>
   <url>
-    <loc>https://lumos-design.cn/interview/4</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://zenspace-design.cn/interview/4</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <mobile:mobile type="pc,mobile"/>
   </url>
 
-  <!-- 服务流程列表页 -->
+  <!-- 服务流程页 -->
   <url>
-    <loc>https://lumos-design.cn/workflow</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://zenspace-design.cn/workflow</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
     <mobile:mobile type="pc,mobile"/>
   </url>
 
   <!-- 服务流程详情页 -->
   <url>
-    <loc>https://lumos-design.cn/workflow/0</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/workflow/1</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/workflow/2</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/workflow/3</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/workflow/4</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/workflow/5</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-
-  <!-- 服务分类页 -->
-  <url>
-    <loc>https://lumos-design.cn/service/cultural-tourism-light-magic</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/service/fashion-light-show</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/service/water-screen-laser-show</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/service/hotel-exterior-lighting</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/service/exhibition-hall-lighting</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/service/office-building-facade</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/service/ancient-building-lighting</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/service/landscape-garden-lighting</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/service/bespoke-villa-lighting</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/service/resort-lighting</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/service/clubhouse-lighting</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/service/museum-lighting</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/service/restaurant-lighting</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/service/spa-wellness-lighting</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/service/ktv-immersive-lighting</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/service/starlight-pathway</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-  <url>
-    <loc>https://lumos-design.cn/service/lighting-art-installation</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <mobile:mobile type="pc,mobile"/>
-  </url>
-
-  <!-- 寺庙设计（建筑+景观+灯光一体化） -->
-  <url>
-    <loc>https://lumos-design.cn/service/temple-architecture-design</loc>
+    <loc>https://zenspace-design.cn/workflow/0</loc>
     <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://zenspace-design.cn/workflow/1</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://zenspace-design.cn/workflow/2</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://zenspace-design.cn/workflow/3</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://zenspace-design.cn/workflow/4</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://zenspace-design.cn/workflow/5</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- ===== 寺庙设计服务分类页（核心业务页，10个）===== -->
+
+  <!-- 汉传佛教设计 -->
+  <url>
+    <loc>https://zenspace-design.cn/service/han-buddhist-temple-design</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- 道教宫观设计 -->
+  <url>
+    <loc>https://zenspace-design.cn/service/taoist-temple-design</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- 藏传佛教设计 -->
+  <url>
+    <loc>https://zenspace-design.cn/service/tibetan-buddhist-temple-design</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- 南传佛教设计 -->
+  <url>
+    <loc>https://zenspace-design.cn/service/theravada-buddhist-temple-design</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- 寺庙建筑设计 -->
+  <url>
+    <loc>https://zenspace-design.cn/service/temple-architecture-design</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- 寺庙室内设计 -->
+  <url>
+    <loc>https://zenspace-design.cn/service/temple-interior-design</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- 寺庙软装设计 -->
+  <url>
+    <loc>https://zenspace-design.cn/service/temple-furnishing-design</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- 寺庙造型雕塑设计 -->
+  <url>
+    <loc>https://zenspace-design.cn/service/temple-sculpture-design</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- 寺庙景观设计 -->
+  <url>
+    <loc>https://zenspace-design.cn/service/temple-landscape-design</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- 寺庙灯光设计 -->
+  <url>
+    <loc>https://zenspace-design.cn/service/temple-lighting-design</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
     <mobile:mobile type="pc,mobile"/>
   </url>
 

@@ -1,12 +1,118 @@
 @import "tailwindcss";
 
+/* ============================================================
+   禅意配色体系：檀木 / 鎏金 / 朱红
+   通过 @theme 重定义 Tailwind 内置调色板，
+   全站 yellow-* / amber-* / neutral-* 类名自动生效，无需逐组件修改。
+   ============================================================ */
+@theme {
+  /* 檀木暖灰 —— 替换原有冷灰，营造温暖沉静的底色 */
+  --color-neutral-50:  #faf6f0;
+  --color-neutral-100: #f3ece1;
+  --color-neutral-200: #e0d7c8;
+  --color-neutral-300: #c3b8a5;
+  --color-neutral-400: #9a9080;
+  --color-neutral-500: #766c5d;
+  --color-neutral-600: #5a5145;
+  --color-neutral-700: #423a31;
+  --color-neutral-800: #2c2620;
+  /* 850：项目中使用 72 处，但 Tailwind v4 默认调色板无此档位，
+     若不定义这些边框/背景会静默失效（不渲染）。 */
+  --color-neutral-850: #241e19;
+  --color-neutral-900: #1d1813;
+  --color-neutral-950: #120e0b;
+
+  /* 鎏金 —— 覆盖 yellow 调色板，主强调色 */
+  --color-yellow-50:  #fdf8ea;
+  --color-yellow-100: #faefcf;
+  --color-yellow-200: #f7e3a8;
+  --color-yellow-300: #efd08a;
+  --color-yellow-400: #e3ba5f;
+  --color-yellow-500: #d4a441;
+  --color-yellow-600: #b8862c;
+  --color-yellow-700: #946722;
+  --color-yellow-800: #785220;
+  --color-yellow-900: #65451f;
+
+  /* 鎏金 —— 覆盖 amber 调色板 */
+  --color-amber-200: #f7e6bb;
+  --color-amber-300: #f2d68f;
+  --color-amber-400: #e8c469;
+  --color-amber-500: #dbac48;
+  --color-amber-600: #bc8c31;
+
+  /* 朱红 —— 寺院红墙，新增调色板，用于强调与行动点 */
+  --color-vermilion-100: #fbe9e4;
+  --color-vermilion-200: #f4c4b8;
+  --color-vermilion-300: #e8836b;
+  --color-vermilion-400: #d9603f;
+  --color-vermilion-500: #c2452b;
+  --color-vermilion-600: #a33722;
+  --color-vermilion-700: #7d2a1a;
+  --color-vermilion-800: #5e2115;
+  --color-vermilion-900: #4a1c12;
+
+  /* ------------------------------------------------------------
+     冷色系映射：把原有青/绿/紫/蓝统一收编进禅意色系，
+     让全站既有 UI 自动贴合寺庙气质，无需逐组件改写类名。
+     青 -> 朱红（第二强调色）
+     翠绿 -> 松苔绿（园林景观辅助色）
+     紫 -> 檀木褐金（暖调中性色）
+     蓝 -> 石青檀褐（沉稳辅助色）
+     ------------------------------------------------------------ */
+  --color-cyan-100: #fbe9e4;
+  --color-cyan-200: #f4c4b8;
+  --color-cyan-300: #e8836b;
+  --color-cyan-400: #d9603f;
+  --color-cyan-500: #c2452b;
+  --color-cyan-600: #a33722;
+  --color-cyan-700: #7d2a1a;
+  --color-cyan-800: #5e2115;
+  --color-cyan-900: #4a1c12;
+
+  --color-emerald-200: #cfd8c2;
+  --color-emerald-300: #b3c2a2;
+  --color-emerald-400: #93a77f;
+  --color-emerald-500: #778c63;
+  --color-emerald-600: #5f714e;
+  --color-emerald-700: #4a583d;
+  --color-emerald-800: #3a4530;
+  --color-emerald-900: #2f3827;
+
+  --color-purple-200: #e0cba8;
+  --color-purple-300: #cdb087;
+  --color-purple-400: #b59269;
+  --color-purple-500: #9c7a54;
+  --color-purple-600: #7f6243;
+  --color-purple-700: #654e36;
+  --color-purple-800: #503e2b;
+  --color-purple-900: #413224;
+
+  --color-blue-200: #dfc9a6;
+  --color-blue-300: #cbae85;
+  --color-blue-400: #b59367;
+  --color-blue-500: #9b7a51;
+  --color-blue-600: #7e6241;
+  --color-blue-700: #634d34;
+
+  --color-teal-300: #a8b89a;
+  --color-teal-400: #8ba07c;
+  --color-teal-500: #6f8760;
+  --color-teal-600: #586c4b;
+
+  --color-indigo-300: #bda588;
+  --color-indigo-400: #a68c6d;
+  --color-indigo-500: #8d7356;
+  --color-indigo-600: #725c44;
+}
+
 @layer utilities {
-  /* High-end pixel grid design backplate for CAD preview */
+  /* 营造图底纹：由冷青改为鎏金暖调，与禅意配色统一 */
   .bg-cad-grid {
     background-size: 20px 20px;
     background-image: 
-      linear-gradient(to right, rgba(6, 182, 212, 0.05) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(6, 182, 212, 0.05) 1px, transparent 1px);
+      linear-gradient(to right, rgba(212, 164, 65, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(212, 164, 65, 0.05) 1px, transparent 1px);
   }
 }
 
@@ -40,20 +146,20 @@
 
 @keyframes border-glow-cycle {
   0% {
-    border-color: rgba(245, 158, 11, 0.6); /* amber */
-    box-shadow: 0 0 10px rgba(245, 158, 11, 0.08);
+    border-color: rgba(212, 164, 65, 0.6); /* 鎏金 */
+    box-shadow: 0 0 10px rgba(212, 164, 65, 0.08);
   }
   33% {
-    border-color: rgba(6, 182, 212, 0.6); /* cyan */
-    box-shadow: 0 0 10px rgba(6, 182, 212, 0.08);
+    border-color: rgba(194, 69, 43, 0.6); /* 朱红 */
+    box-shadow: 0 0 10px rgba(194, 69, 43, 0.08);
   }
   66% {
-    border-color: rgba(16, 185, 129, 0.6); /* emerald */
-    box-shadow: 0 0 10px rgba(16, 185, 129, 0.08);
+    border-color: rgba(154, 144, 128, 0.6); /* 檀木 */
+    box-shadow: 0 0 10px rgba(154, 144, 128, 0.08);
   }
   100% {
-    border-color: rgba(245, 158, 11, 0.6); /* amber */
-    box-shadow: 0 0 10px rgba(245, 158, 11, 0.08);
+    border-color: rgba(212, 164, 65, 0.6); /* 鎏金 */
+    box-shadow: 0 0 10px rgba(212, 164, 65, 0.08);
   }
 }
 
@@ -78,12 +184,12 @@
 .animate-led-flow {
   background: linear-gradient(
     90deg,
-    #facc15 0%,
-    #f59e0b 20%,
-    #06b6d4 40%,
-    #10b981 60%,
-    #3b82f6 80%,
-    #facc15 100%
+    #e3ba5f 0%,
+    #d4a441 20%,
+    #c2452b 40%,
+    #778c63 60%,
+    #9b7a51 80%,
+    #e3ba5f 100%
   );
   background-size: 200% auto;
   color: transparent !important;
@@ -92,7 +198,7 @@
   -webkit-text-fill-color: transparent !important;
   animation: led-flow-slide 4s linear infinite;
   display: inline-block;
-  text-shadow: 0 0 15px rgba(245, 158, 11, 0.15); /* Gives a premium glowing lightbulb aura */
+  text-shadow: 0 0 15px rgba(212, 164, 65, 0.15); /* Gives a premium glowing lightbulb aura */
 }
 
 
@@ -237,8 +343,8 @@ html {
 
 /* 灯带整体：边缘微光脉冲 */
 @keyframes led-strip-pulse {
-  0%, 100% { box-shadow: inset 0 0 12px rgba(6, 182, 212, 0.06); }
-  50%      { box-shadow: inset 0 0 22px rgba(245, 158, 11, 0.10); }
+  0%, 100% { box-shadow: inset 0 0 12px rgba(194, 69, 43, 0.06); }
+  50%      { box-shadow: inset 0 0 22px rgba(212, 164, 65, 0.10); }
 }
 
 .led-strip-container {
@@ -252,8 +358,8 @@ html {
     animation: none;
   }
   .led-dot {
-    background-color: #facc15;
-    box-shadow: 0 0 4px #facc15;
+    background-color: #e3ba5f;
+    box-shadow: 0 0 4px #e3ba5f;
   }
 }
 

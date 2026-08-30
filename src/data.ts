@@ -597,8 +597,8 @@ export const BLUEPRINT_PRESETS: BlueprintPreset[] = [
       { id: "pagoda-b1", type: "wash", x: 23, y: 88, angle: 60, color: "#e3a857", intensity: 80 },
       { id: "pagoda-b2", type: "wash", x: 77, y: 88, angle: 60, color: "#e3a857", intensity: 80 },
       { id: "pagoda-t1", type: "spot", x: 45, y: 45, angle: 15, color: "#d97706", intensity: 90 },
-      { id: "pagoda-e1", type: "linear", x: 25, y: 41, angle: 30, color: "#f59e0b", intensity: 60 },
-      { id: "pagoda-e2", type: "linear", x: 65, y: 41, angle: 30, color: "#f59e0b", intensity: 60 }
+      { id: "pagoda-e1", type: "linear", x: 25, y: 41, angle: 30, color: "#d4a441", intensity: 60 },
+      { id: "pagoda-e2", type: "linear", x: 65, y: 41, angle: 30, color: "#d4a441", intensity: 60 }
     ]
   },
   {
@@ -618,7 +618,7 @@ export const BLUEPRINT_PRESETS: BlueprintPreset[] = [
     defaultFixtures: [
       { id: "tower-base-l", type: "flood", x: 20, y: 92, angle: 45, color: "#1e3a8a", intensity: 70 },
       { id: "tower-base-r", type: "flood", x: 80, y: 92, angle: 45, color: "#1e3a8a", intensity: 70 },
-      { id: "tower-line-1", type: "linear", x: 50, y: 50, angle: 90, color: "#3b82f6", intensity: 85 },
+      { id: "tower-line-1", type: "linear", x: 50, y: 50, angle: 90, color: "#c2452b", intensity: 85 },
       { id: "tower-crown", type: "spot", x: 50, y: 8, angle: 120, color: "#f8fafc", intensity: 95 }
     ]
   },

@@ -141,7 +141,7 @@ export default function BlueprintStudio() {
           </div>
           <h2 className="text-2xl font-black tracking-tight font-sans text-neutral-100">科技与产品运用</h2>
           <p className="text-xs text-neutral-400 leading-relaxed mt-1 overflow-hidden">
-            本中心集中展示 <strong>光影大师</strong> 旗下的高端建筑与景观亮化硬件产品、智慧级数字中控联动技术。您可在产品库中了解专业配光指标与智能联动协议。
+            本中心集中展示 <strong>禅境设计</strong> 旗下的高端建筑与景观亮化硬件产品、智慧级数字中控联动技术。您可在产品库中了解专业配光指标与智能联动协议。
           </p>
         </div>
 
@@ -269,7 +269,7 @@ export default function BlueprintStudio() {
                 <h4 className="font-extrabold text-neutral-100 text-base flex items-center gap-2">
                   {t.title}
                 </h4>
-                <p className="text-[10px] text-[#06b6d4] font-mono tracking-wider font-bold uppercase mt-0.5">
+                <p className="text-[10px] text-[#c2452b] font-mono tracking-wider font-bold uppercase mt-0.5">
                   {t.sub}
                 </p>
                 <p className="text-xs text-neutral-400 mt-3 leading-relaxed">
@@ -285,7 +285,7 @@ export default function BlueprintStudio() {
               <div>
                 <h5 className="text-neutral-100 text-sm font-bold">寻求更高强度的定制化控制流？</h5>
                 <p className="text-xs text-neutral-400 mt-1 max-w-2xl leading-relaxed">
-                  光影大师工程实验室提供定制化智能中控联动。欢迎通过 智能设计顾问询问特定物理阻抗对数调光布灯方案。
+                  禅境设计工程实验室提供定制化智能中控联动。欢迎通过 智能设计顾问询问特定物理阻抗对数调光布灯方案。
                 </p>
               </div>
             </div>

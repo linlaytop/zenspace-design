@@ -10,7 +10,7 @@ const ART_LANDMARK_DATA = [
     fullArticle: `## 悉尼歌剧院灯光节
 
 ### 项目概况
-每年五月，悉尼歌剧院化身为全球最具影响力的灯光艺术殿堂。光影大师设计团队受邀参与 2024 届灯光节，负责歌剧院主厅外立面及周边海堤的整体夜景照明方案。
+每年五月，悉尼歌剧院化身为全球最具影响力的灯光艺术殿堂。禅境设计设计团队受邀参与 2024 届灯光节，负责歌剧院主厅外立面及周边海堤的整体夜景照明方案。
 
 ### 技术方案
 - **投影设备**：120 台 40,000 流明 RGBW 激光投影机
@@ -33,7 +33,7 @@ const ART_LANDMARK_DATA = [
     fullArticle: `## 埃菲尔铁塔星光闪烁
 
 ### 项目背景
-埃菲尔铁塔作为巴黎永久性地标，自 1985 年起每年冬季都会点亮闪烁灯光。光影大师设计团队于 2023 年受邀对闪烁系统进行升级。
+埃菲尔铁塔作为巴黎永久性地标，自 1985 年起每年冬季都会点亮闪烁灯光。禅境设计设计团队于 2023 年受邀对闪烁系统进行升级。
 
 ### 技术革新
 - **LED 数量**：20,000 颗独立可编程暖白光 LED
@@ -56,7 +56,7 @@ const ART_LANDMARK_DATA = [
     fullArticle: `## 外滩万国建筑灯光群
 
 ### 项目意义
-外滩万国建筑博览群是上海最具标志性的历史文化遗产。2023年，光影大师设计团队受上海市黄浦区政府邀请，为外滩12栋核心建筑进行夜景照明升级改造。
+外滩万国建筑博览群是上海最具标志性的历史文化遗产。2023年，禅境设计设计团队受上海市黄浦区政府邀请，为外滩12栋核心建筑进行夜景照明升级改造。
 
 ### 设计挑战
 - 所有建筑均为国家级历史保护建筑，严禁任何打孔、铆接破坏
@@ -81,7 +81,7 @@ const ART_LANDMARK_DATA = [
     fullArticle: `## 新加坡滨海湾灯光秀
 
 ### 项目规模
-新加坡滨海湾灯光秀（i Light Singapore）是亚洲最具影响力的数字灯光艺术节。光影大师设计团队负责核心区域——滨海湾金沙酒店外立面及漂浮舞台整体灯光设计方案。
+新加坡滨海湾灯光秀（i Light Singapore）是亚洲最具影响力的数字灯光艺术节。禅境设计设计团队负责核心区域——滨海湾金沙酒店外立面及漂浮舞台整体灯光设计方案。
 
 ### 技术亮点
 - **激光阵列**：48组全彩纯二极管激光器，单组功率60W
@@ -104,7 +104,7 @@ const ART_LANDMARK_DATA = [
     fullArticle: `## 阿布扎比清真寺夜光
 
 ### 文化尊重
-谢赫扎耶德大清真寺是伊斯兰世界最具影响力的宗教建筑之一。光影大师团队深入研习伊斯兰美学原则，确保每一束光符合宗教场所神圣氛围。
+谢赫扎耶德大清真寺是伊斯兰世界最具影响力的宗教建筑之一。禅境设计团队深入研习伊斯兰美学原则，确保每一束光符合宗教场所神圣氛围。
 
 ### 技术极致
 - **照度控制**：平均照度仅8 Lx（常规项目的1/15）
@@ -195,7 +195,7 @@ export default function ArtLandmarkDetailPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#070a0e] text-neutral-100">
+    <div className="min-h-screen bg-[#120e0b] text-neutral-100">
       {/* 顶部导航栏 */}
       <div className="border-b border-neutral-900 bg-neutral-950/80 backdrop-blur-md sticky top-0 z-30">
         <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -222,7 +222,7 @@ export default function ArtLandmarkDetailPage() {
         >
           <div className="aspect-[2/1] rounded-2xl overflow-hidden bg-gradient-to-br from-yellow-900/40 via-amber-800/20 to-orange-900/40 flex items-center justify-center mb-6">
             <Globe className="w-24 h-24 text-yellow-500/20" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#070a0e] via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#120e0b] via-transparent to-transparent" />
           </div>
 
           {/* 标题区 */}

@@ -14,7 +14,7 @@ export default function TechColumnModal({ onClose, onArticleClick }: TechColumnM
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 20 }}
       transition={{ duration: 0.3 }}
-      className="relative bg-[#0b0f17] border border-purple-500/30 rounded-3xl max-w-5xl w-full max-h-[90vh] overflow-hidden shadow-2xl"
+      className="relative bg-[#1a1310] border border-purple-500/30 rounded-3xl max-w-5xl w-full max-h-[90vh] overflow-hidden shadow-2xl"
       onClick={(e) => e.stopPropagation()}
     >
       {/* Header */}
@@ -40,7 +40,7 @@ export default function TechColumnModal({ onClose, onArticleClick }: TechColumnM
       <div className="p-5 sm:p-6 overflow-y-auto max-h-[calc(90vh-80px)]">
         <div className="flex flex-col gap-4">
           <p className="text-xs text-neutral-400 leading-relaxed">
-            光影大师技术团队分享户外灯光设计专业知识，包括古建照明、文旅夜游、控制系统等领域的技术指南与行业趋势分析。
+            禅境设计技术团队分享户外灯光设计专业知识，包括古建照明、文旅夜游、控制系统等领域的技术指南与行业趋势分析。
           </p>
 
           {/* Articles List - 改为竖排布局，类似微信公众号 */}

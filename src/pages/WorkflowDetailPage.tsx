@@ -89,7 +89,7 @@ export default function WorkflowDetailPage() {
                 阅读约 {step.readTime}
               </span>
               <CheckCircle2 className="w-4 h-4 text-emerald-500" />
-              <span>光影大师标准服务流程</span>
+              <span>禅境设计标准服务流程</span>
             </div>
           </motion.div>
         </div>

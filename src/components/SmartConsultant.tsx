@@ -405,7 +405,7 @@ export default function SmartConsultant() {
 
                 {/* Conceptual and title */}
                 <div>
-                  <span className="font-mono text-[9px] tracking-widest text-[#06b6d4]">创意策划方案主题</span>
+                  <span className="font-mono text-[9px] tracking-widest text-[#c2452b]">创意策划方案主题</span>
                   <h3 className="text-xl font-bold text-yellow-400 mt-1">{plan.title}</h3>
                   <p className="text-xs text-neutral-300 leading-relaxed mt-2.5 bg-neutral-900 p-3 rounded-xl border border-neutral-850 italic">
                     “ {plan.concept} ”
@@ -432,7 +432,7 @@ export default function SmartConsultant() {
 
                 {/* Fixtures checklist */}
                 <div className="flex flex-col gap-2">
-                  <span className="font-mono text-[9px] tracking-widest text-[#06b6d4] flex items-center gap-1">
+                  <span className="font-mono text-[9px] tracking-widest text-[#c2452b] flex items-center gap-1">
                     <Wrench className="w-3 h-3" /> 高定灯具选型清单及安装预算密度 (Equipment Matrix)
                   </span>
                   

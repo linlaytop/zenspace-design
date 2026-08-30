@@ -306,8 +306,8 @@ export default function ShowcaseGallery() {
   // Project Archiver Lifecycle State
   const [backupNotification, setBackupNotification] = useState<string>("");
 
-  // Save Project state of Lumos to network-side hosted server for online publishing
-  const saveLumosProjectToServer = async () => {
+  // Save Project state of Zenspace to network-side hosted server for online publishing
+  const saveZenspaceProjectToServer = async () => {
     try {
       setBackupNotification("⏳ 正在检查服务器连接...");
       
@@ -412,7 +412,7 @@ export default function ShowcaseGallery() {
   };
 
   // Retrieve project blueprint from host server
-  const loadLumosProjectFromServer = async (showNotification = true) => {
+  const loadZenspaceProjectFromServer = async (showNotification = true) => {
     try {
       // First check if server is available
       if (showNotification) {
@@ -467,11 +467,11 @@ export default function ShowcaseGallery() {
 
   // Mount triggered automatic loading of hosting state from server
   useEffect(() => {
-    loadLumosProjectFromServer(false);
+    loadZenspaceProjectFromServer(false);
   }, []);
 
   // Alternative Save Project Offline Backup JSON file to disk as high-performance client stream Blob
-  const exportLumosProject = () => {
+  const exportZenspaceProject = () => {
     try {
       const backupEnvelope = {
         version: "lumos-design-v1",
@@ -490,7 +490,7 @@ export default function ShowcaseGallery() {
       const anchorNode = document.createElement("a");
       anchorNode.href = dynamicUrl;
       const fmtDate = new Date().toISOString().split("T")[0];
-      anchorNode.download = `LUMOS_MASTER_BACKUP_${fmtDate}.json`;
+      anchorNode.download = `ZENSPACE_MASTER_BACKUP_${fmtDate}.json`;
       
       document.body.appendChild(anchorNode);
       anchorNode.click();
@@ -506,7 +506,7 @@ export default function ShowcaseGallery() {
   };
 
   // Alternative Restore Project Backup JSON file cleanly with verification
-  const importLumosProject = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const importZenspaceProject = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
 
@@ -515,7 +515,7 @@ export default function ShowcaseGallery() {
       try {
         const payload = JSON.parse(evt.target?.result as string);
         if (payload.version !== "lumos-design-v1") {
-          alert("错误：此备份文件不适用于当前 光影大师 亮化平台！");
+          alert("错误：此备份文件不适用于当前 禅境设计 亮化平台！");
           return;
         }
 
@@ -530,7 +530,7 @@ export default function ShowcaseGallery() {
         setTimeout(() => setBackupNotification(""), 4500);
       } catch (err) {
         console.error("Import backup parsing error:", err);
-        alert("导入失败：请提供合法未损毁的 JSON 格式光影大师项目包！");
+        alert("导入失败：请提供合法未损毁的 JSON 格式禅境设计项目包！");
       }
     };
     fileReader.readAsText(file);
@@ -577,7 +577,7 @@ export default function ShowcaseGallery() {
             concept: customImgUrl 
               ? "加载了您专属上传的大画特景或极速微光视频。请滑动下方的高级参数来调整色温及亮度表现。" 
               : page.concept,
-            photographer: customImgUrl ? "尊贵的用户" : (page.photographer || "Lumos Premium Shot"),
+            photographer: customImgUrl ? "尊贵的用户" : (page.photographer || "Zenspace Premium Shot"),
             stats: page.stats || baseCat.cases[0].stats
           }
         ]
@@ -593,10 +593,10 @@ export default function ShowcaseGallery() {
 
   // Map temperature (K) to readable colors & styles
   const getTempDescription = (temp: number) => {
-    if (temp < 2500) return { label: "2200K 琥珀微火 (Warm Ember)", color: "text-amber-500", rgb: "rgba(245, 158, 11, 0.4)" };
-    if (temp < 3200) return { label: "3000K 奢华暖金 (Prada Gold)", color: "text-yellow-500", rgb: "rgba(234, 179, 8, 0.3)" };
-    if (temp < 4500) return { label: "4000K 自然月影 (Luna White)", color: "text-blue-200", rgb: "rgba(165, 243, 252, 0.2)" };
-    return { label: "5500K 极地冷银 (Cyber Silver)", color: "text-cyan-400", rgb: "rgba(34, 211, 238, 0.15)" };
+    if (temp < 2500) return { label: "2200K 琥珀微火 (Warm Ember)", color: "text-amber-500", rgb: "rgba(212, 164, 65, 0.4)" };
+    if (temp < 3200) return { label: "3000K 奢华暖金 (Prada Gold)", color: "text-yellow-500", rgb: "rgba(227, 186, 95, 0.3)" };
+    if (temp < 4500) return { label: "4000K 自然月影 (Luna White)", color: "text-blue-200", rgb: "rgba(244, 196, 184, 0.2)" };
+    return { label: "5500K 极地冷银 (Cyber Silver)", color: "text-cyan-400", rgb: "rgba(217, 96, 63, 0.15)" };
   };
 
   // Sync temperature changes to corresponding highlight colors
@@ -607,13 +607,13 @@ export default function ShowcaseGallery() {
     }
     const temp = params.temperature;
     if (temp < 2500) {
-      setParams(p => ({ ...p, color: "rgba(245, 158, 11, 0.5)" }));
+      setParams(p => ({ ...p, color: "rgba(212, 164, 65, 0.5)" }));
     } else if (temp < 3200) {
-      setParams(p => ({ ...p, color: "rgba(234, 179, 8, 0.4)" }));
+      setParams(p => ({ ...p, color: "rgba(227, 186, 95, 0.4)" }));
     } else if (temp < 4500) {
-      setParams(p => ({ ...p, color: "rgba(165, 243, 252, 0.3)" }));
+      setParams(p => ({ ...p, color: "rgba(244, 196, 184, 0.3)" }));
     } else {
-      setParams(p => ({ ...p, color: "rgba(34, 211, 238, 0.25)" }));
+      setParams(p => ({ ...p, color: "rgba(217, 96, 63, 0.25)" }));
     }
   }, [params.temperature, selectedCatId]);
 
@@ -777,13 +777,13 @@ export default function ShowcaseGallery() {
   const applyPreset = (mode: 'eco' | 'normal' | 'festive' | 'off') => {
     switch (mode) {
       case 'eco':
-        setParams({ temperature: 2200, intensity: 30, color: "rgba(245, 158, 11, 0.2)", animationMode: "breath" });
+        setParams({ temperature: 2200, intensity: 30, color: "rgba(212, 164, 65, 0.2)", animationMode: "breath" });
         break;
       case 'normal':
-        setParams({ temperature: 3000, intensity: 80, color: "rgba(234, 179, 8, 0.3)", animationMode: "breath" });
+        setParams({ temperature: 3000, intensity: 80, color: "rgba(227, 186, 95, 0.3)", animationMode: "breath" });
         break;
       case 'festive':
-        setParams({ temperature: 4000, intensity: 100, color: "rgba(165, 243, 252, 0.4)", animationMode: "pulse" });
+        setParams({ temperature: 4000, intensity: 100, color: "rgba(244, 196, 184, 0.4)", animationMode: "pulse" });
         break;
       case 'off':
         setParams({ temperature: 3000, intensity: 0, color: "rgba(0,0,0,0)", animationMode: "static" });
@@ -884,7 +884,7 @@ export default function ShowcaseGallery() {
               <button
                 id="save-blueprint-master-btn"
                 type="button"
-                onClick={saveLumosProjectToServer}
+                onClick={saveZenspaceProjectToServer}
                 className="bg-[#0c0d12]/90 hover:bg-neutral-950 border-2 border-dashed border-purple-500 hover:border-purple-400 text-purple-300 hover:text-purple-200 px-4 py-2 rounded-xl text-xs font-mono font-bold cursor-pointer transition-all flex items-center justify-center gap-1.5 shrink-0 whitespace-nowrap shadow-md shadow-purple-950/20 animate-fade-in"
                 title="保存立面与亮化参数全量方案并托管至在线云端服务器中"
               >
@@ -895,7 +895,7 @@ export default function ShowcaseGallery() {
           ) : (
             <label 
               htmlFor="facade-upload-input"
-              className="group relative flex items-center justify-center gap-2 bg-[#0d0f14]/80 hover:bg-neutral-950 border-2 border-dashed border-purple-500/40 hover:border-purple-500 px-5 py-2.5 rounded-xl text-xs text-neutral-200 font-mono transition-all cursor-pointer shadow-lg w-full sm:w-auto animate-pulse overflow-hidden"
+              className="group relative flex items-center justify-center gap-2 bg-[#1a1310]/80 hover:bg-neutral-950 border-2 border-dashed border-purple-500/40 hover:border-purple-500 px-5 py-2.5 rounded-xl text-xs text-neutral-200 font-mono transition-all cursor-pointer shadow-lg w-full sm:w-auto animate-pulse overflow-hidden"
             >
               <span className="w-2 h-2 rounded-full bg-purple-500 shrink-0" />
               <span className="text-[11px] tracking-wider text-neutral-250">📤 上传「{selectedCategory.name}」第 {mediaPageIndex + 1} 页专属实景/视频</span>
@@ -939,25 +939,25 @@ export default function ShowcaseGallery() {
                     setSelectedCatId(cat.id);
                     // Setup typical starting params based on selected category types
                     if (cat.id === "cultural-tourism") {
-                      setParams({ temperature: 4200, intensity: 85, color: "rgba(139, 92, 246, 0.4)", animationMode: "chase" });
+                      setParams({ temperature: 4200, intensity: 85, color: "rgba(156, 122, 84, 0.4)", animationMode: "chase" });
                     } else if (cat.id === "ancient") {
-                      setParams({ temperature: 2200, intensity: 65, color: "rgba(245, 158, 11, 0.4)", animationMode: "breath" });
+                      setParams({ temperature: 2200, intensity: 65, color: "rgba(212, 164, 65, 0.4)", animationMode: "breath" });
                     } else if (cat.id === "water-show") {
-                      setParams({ temperature: 6000, intensity: 90, color: "rgba(59, 130, 246, 0.45)", animationMode: "chase" });
+                      setParams({ temperature: 6000, intensity: 90, color: "rgba(155, 122, 81, 0.45)", animationMode: "chase" });
                     } else if (cat.id === "hotel") {
-                      setParams({ temperature: 3000, intensity: 80, color: "rgba(234, 179, 8, 0.3)", animationMode: "breath" });
+                      setParams({ temperature: 3000, intensity: 80, color: "rgba(227, 186, 95, 0.3)", animationMode: "breath" });
                     } else if (cat.id === "exhibition-hall") {
-                      setParams({ temperature: 3500, intensity: 75, color: "rgba(245, 158, 11, 0.25)", animationMode: "breath" });
+                      setParams({ temperature: 3500, intensity: 75, color: "rgba(212, 164, 65, 0.25)", animationMode: "breath" });
                     } else if (cat.id === "office") {
-                      setParams({ temperature: 4500, intensity: 85, color: "rgba(165, 243, 252, 0.3)", animationMode: "breath" });
+                      setParams({ temperature: 4500, intensity: 85, color: "rgba(244, 196, 184, 0.3)", animationMode: "breath" });
                     } else if (cat.id === "garden") {
-                      setParams({ temperature: 3500, intensity: 70, color: "rgba(165, 243, 252, 0.2)", animationMode: "breath" });
+                      setParams({ temperature: 3500, intensity: 70, color: "rgba(244, 196, 184, 0.2)", animationMode: "breath" });
                     } else if (cat.id === "star-path") {
-                      setParams({ temperature: 2400, intensity: 60, color: "rgba(234, 179, 8, 0.2)", animationMode: "breath" });
+                      setParams({ temperature: 2400, intensity: 60, color: "rgba(227, 186, 95, 0.2)", animationMode: "breath" });
                     } else if (cat.id === "art-installation") {
-                      setParams({ temperature: 3200, intensity: 85, color: "rgba(139, 92, 246, 0.4)", animationMode: "chase" });
+                      setParams({ temperature: 3200, intensity: 85, color: "rgba(156, 122, 84, 0.4)", animationMode: "chase" });
                     } else {
-                      setParams({ temperature: 3000, intensity: 80, color: "rgba(234, 179, 8, 0.35)", animationMode: "breath" });
+                      setParams({ temperature: 3000, intensity: 80, color: "rgba(227, 186, 95, 0.35)", animationMode: "breath" });
                     }
                   }}
                   className={`w-full text-left p-4 rounded-xl transition-all duration-300 border ${
@@ -1100,7 +1100,7 @@ export default function ShowcaseGallery() {
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
               <span className="text-[11px] font-mono tracking-wider text-neutral-300 font-bold uppercase">
-                LUMOS WORKSPACE / 光影大师渲染视槽
+                ZENSPACE WORKSPACE / 禅境设计渲染视槽
               </span>
             </div>
           </div>
@@ -1114,7 +1114,7 @@ export default function ShowcaseGallery() {
                   <span className="w-2.5 h-2.5 rounded-full bg-red-500/70" />
                   <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/70" />
                   <span className="w-2.5 h-2.5 rounded-full bg-green-500/70" />
-                  <span className="text-[10px] text-neutral-400 font-bold ml-1.5">root@lumos-node:~</span>
+                  <span className="text-[10px] text-neutral-400 font-bold ml-1.5">root@zenspace-node:~</span>
                 </div>
                 <div className="flex items-center gap-2 text-neutral-500 text-[10px]">
                   {isCliLoading ? (
@@ -1248,7 +1248,7 @@ export default function ShowcaseGallery() {
               
               {/* Dynamic Laser Scanning beam overlay on AI Generation */}
               {selectedCatId === "custom-uploaded" && isAiGenerating && (
-                <div className="absolute inset-0 z-40 bg-[#070a0e]/95 flex flex-col items-center justify-center p-6 text-center backdrop-blur-xs select-none">
+                <div className="absolute inset-0 z-40 bg-[#120e0b]/95 flex flex-col items-center justify-center p-6 text-center backdrop-blur-xs select-none">
                   <div className="w-16 h-16 rounded-full bg-cyan-950/40 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-4 animate-spin">
                     <RefreshCw className="w-7 h-7" />
                   </div>
@@ -1308,7 +1308,7 @@ export default function ShowcaseGallery() {
                   </motion.div>
                 </AnimatePresence>
               ) : (
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-[#0d0f14]/85 border border-neutral-900 m-4 rounded-2xl">
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-[#1a1310]/85 border border-neutral-900 m-4 rounded-2xl">
                   <div className="w-14 h-14 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-purple-400 mb-3 animate-pulse">
                     <Layers className="w-6 h-6" />
                   </div>
@@ -1408,7 +1408,7 @@ export default function ShowcaseGallery() {
                 }}
                 className={`px-3 py-1.5 rounded-full font-mono text-[11px] font-bold flex items-center gap-2 border cursor-pointer shadow-md transition-all duration-300 hover:scale-105 active:scale-95 ${
                   isNightMode 
-                    ? "bg-[#06b6d4]/10 hover:bg-[#06b6d4]/20 text-[#06b6d4] border-[#06b6d4]/30" 
+                    ? "bg-[#c2452b]/10 hover:bg-[#c2452b]/20 text-[#c2452b] border-[#c2452b]/30" 
                     : "bg-amber-500 hover:bg-amber-400 text-neutral-950 border-amber-600"
                 }`}
                 title="点击一键在日光白天与专属夜景照明设计中切换"
@@ -1616,7 +1616,7 @@ export default function ShowcaseGallery() {
       {isLoggedIn && (
         <>
       {/* PROJECT LIFECYCLE SAVE & RESTORE CORE PANEL — moved to page bottom */}
-      <div id="project-backup-premium-widget" className="relative bg-[#0d0f14]/80 border border-neutral-800/80 p-5 rounded-2xl flex flex-col gap-3 text-left hover:border-purple-500/30 transition-all shadow-md">
+      <div id="project-backup-premium-widget" className="relative bg-[#1a1310]/80 border border-neutral-800/80 p-5 rounded-2xl flex flex-col gap-3 text-left hover:border-purple-500/30 transition-all shadow-md">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-7 h-7 rounded-lg bg-purple-550/10 border border-purple-500/20 flex items-center justify-center">
@@ -1631,14 +1631,14 @@ export default function ShowcaseGallery() {
         </div>
 
         <p className="text-[11px] text-neutral-450 leading-relaxed">
-          光影大师设计方案现在可<b>可以直接发布托管</b>至在线云端服务器。当系统上线或刷新页面时，将自动为您和所有访客加载并应用此托管版本方案。
+          禅境设计设计方案现在可<b>可以直接发布托管</b>至在线云端服务器。当系统上线或刷新页面时，将自动为您和所有访客加载并应用此托管版本方案。
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 mt-1 w-full">
           <button
             id="save-to-cloud-btn"
             type="button"
-            onClick={saveLumosProjectToServer}
+            onClick={saveZenspaceProjectToServer}
             className="flex-1 py-2 px-3 rounded-xl text-xs bg-purple-950/40 hover:bg-purple-900/40 text-purple-300 border border-purple-500/30 hover:border-purple-400 transition-all font-semibold flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
           >
             <Save className="w-3.5 h-3.5 shrink-0 text-purple-400 animate-pulse" />
@@ -1648,7 +1648,7 @@ export default function ShowcaseGallery() {
           <button
             id="load-from-cloud-btn"
             type="button"
-            onClick={() => loadLumosProjectFromServer(true)}
+            onClick={() => loadZenspaceProjectFromServer(true)}
             className="flex-1 py-2 px-3 rounded-xl text-xs bg-[#0c0d12] hover:bg-neutral-950 border border-neutral-800 hover:border-neutral-700 text-neutral-300 transition-all font-semibold flex items-center justify-center gap-1.5 cursor-pointer shadow-md text-center"
           >
             <RefreshCw className="w-3.5 h-3.5 text-yellow-400 shrink-0" />
@@ -1661,7 +1661,7 @@ export default function ShowcaseGallery() {
           <div className="flex gap-2.5">
             <button
               type="button"
-              onClick={exportLumosProject}
+              onClick={exportZenspaceProject}
               className="flex-1 py-1.5 px-2.5 rounded-xl text-[10px] bg-neutral-900 hover:bg-neutral-850 border border-neutral-800 text-neutral-400 hover:text-neutral-300 transition-all flex items-center justify-center gap-1 cursor-pointer"
             >
               <Download className="w-3 h-3 text-neutral-500" />
@@ -1674,7 +1674,7 @@ export default function ShowcaseGallery() {
                 type="file"
                 accept=".json"
                 className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
-                onChange={importLumosProject}
+                onChange={importZenspaceProject}
               />
             </label>
           </div>

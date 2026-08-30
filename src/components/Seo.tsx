@@ -16,7 +16,7 @@ interface SeoProps {
   faq?: FaqItem[];
 }
 
-const BASE_URL = 'https://lumos-design.cn'; // 部署后替换为实际域名
+const BASE_URL = 'https://zenspace-design.cn'; // 部署后替换为实际域名
 
 /**
  * 百度SEO优化组件（增强版）
@@ -34,7 +34,7 @@ export default function Seo({
   faq,
 }: SeoProps) {
   const fullUrl = `${BASE_URL}${path}`;
-  const fullTitle = title.length > 30 ? title : `${title} | 光影大师灯光设计`;
+  const fullTitle = title.length > 30 ? title : `${title} | 禅境设计灯光设计`;
 
   // 面包屑结构化数据
   const breadcrumbItems = [
@@ -63,8 +63,8 @@ export default function Seo({
     ...(image && { image }),
     publisher: {
       '@type': 'Organization',
-      name: '光影大师',
-      alternateName: 'LUMOS DESIGN',
+      name: '禅境设计',
+      alternateName: 'ZENSPACE DESIGN',
     },
   };
 
@@ -98,7 +98,7 @@ export default function Seo({
       <meta property="og:type" content={type} />
       <meta property="og:url" content={fullUrl} />
       <meta property="og:locale" content="zh_CN" />
-      <meta property="og:site_name" content="光影大师 LUMOS DESIGN" />
+      <meta property="og:site_name" content="禅境设计 ZENSPACE DESIGN" />
       {image && <meta property="og:image" content={image} />}
 
       {/* 百度移动适配 */}

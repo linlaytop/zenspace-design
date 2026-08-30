@@ -102,7 +102,7 @@ export default function NewsSection() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 30, scale: 0.98 }}
               transition={{ duration: 0.25 }}
-              className="relative w-[95vw] max-w-5xl h-[90vh] max-h-[900px] bg-[#070a0e] border border-neutral-800 rounded-2xl shadow-2xl overflow-hidden flex flex-col"
+              className="relative w-[95vw] max-w-5xl h-[90vh] max-h-[900px] bg-[#120e0b] border border-neutral-800 rounded-2xl shadow-2xl overflow-hidden flex flex-col"
             >
               {/* Top Navigation Bar */}
               <div className="border-b border-neutral-900 bg-neutral-950/80 backdrop-blur-md shrink-0">
@@ -289,7 +289,7 @@ const DEFAULT_STANDARD_ARTICLES: StandardArticle[] = [
 
 【办公楼灯光设计】以功能性为主，入口标识、立面韵律与节能控制结合，常用 LED 投光灯与线性洗墙灯，色温 3500K–4000K，接入楼宇智能做平日 / 深夜两档场景。
 
-国内 GB 50034《建筑照明设计标准》对各功能空间照度、均匀度、眩光限制均有强制规定，光影大师在酒店外观灯光、展厅灯光设计、办公楼灯光设计中严格对接国际及国内灯光标准。`,
+国内 GB 50034《建筑照明设计标准》对各功能空间照度、均匀度、眩光限制均有强制规定，禅境设计在酒店外观灯光、展厅灯光设计、办公楼灯光设计中严格对接国际及国内灯光标准。`,
     coverImage: "https://images.unsplash.com/photo-1565514020176-7ab1fcc81a3f?w=800&q=80",
     tags: ["酒店外观灯光", "展厅设计", "展厅灯光设计", "办公楼灯光设计", "建筑照明"],
     color: "amber",
@@ -467,7 +467,7 @@ function LightStandardsBoard() {
 
   return (
     <>
-      <aside className="h-full bg-[#070a0e] border border-neutral-800 rounded-2xl p-4 flex flex-col">
+      <aside className="h-full bg-[#120e0b] border border-neutral-800 rounded-2xl p-4 flex flex-col">
         <div className="flex items-start justify-between mb-4">
           <div>
             <h4 className="text-sm font-bold text-neutral-100 flex items-center gap-2">
@@ -716,7 +716,7 @@ function LightStandardsBoard() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 30, scale: 0.98 }}
               transition={{ duration: 0.25 }}
-              className="relative w-[95vw] max-w-2xl max-h-[90vh] bg-[#070a0e] border border-neutral-800 rounded-2xl shadow-2xl overflow-hidden flex flex-col"
+              className="relative w-[95vw] max-w-2xl max-h-[90vh] bg-[#120e0b] border border-neutral-800 rounded-2xl shadow-2xl overflow-hidden flex flex-col"
             >
               <div className="flex items-center justify-between px-5 py-3 border-b border-neutral-900 bg-neutral-950/50 shrink-0">
                 <div className="flex items-center gap-2">
@@ -800,9 +800,9 @@ function LightStandardsBoard() {
 function getStandardColorHex(color: StandardArticle["color"]) {
   const hex: Record<StandardArticle["color"], string> = {
     purple: "#a855f7",
-    amber: "#f59e0b",
-    blue: "#3b82f6",
-    green: "#10b981",
+    amber: "#d4a441",
+    blue: "#9b7a51",
+    green: "#778c63",
     rose: "#f43f5e",
   };
   return hex[color];

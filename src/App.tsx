@@ -58,7 +58,7 @@ interface Contact {
 }
 
 const DEFAULT_CONTACTS: Contact[] = [
-  { id: '1', type: 'channel', label: '官方视频号', value: '光影大师空间美学' },
+  { id: '1', type: 'channel', label: '官方视频号', value: '禅境设计空间美学' },
   { id: '2', type: 'wechat', label: '专属微信号', value: 'LumosDesignVIP' },
   { id: '3', type: 'phone', label: '设计预约手机号', value: '138-1688-6888' }
 ];
@@ -94,7 +94,7 @@ function RgbParagraph({ text }: { text: string }) {
 function LedColorStrip() {
   const dotCount = 32;
   return (
-    <div className="w-full h-9 rounded-xl bg-[#070a0e]/80 border border-neutral-800/70 led-strip-container overflow-hidden relative flex items-center justify-center gap-[3px] sm:gap-1 px-2 select-none pointer-events-none">
+    <div className="w-full h-9 rounded-xl bg-[#120e0b]/80 border border-neutral-800/70 led-strip-container overflow-hidden relative flex items-center justify-center gap-[3px] sm:gap-1 px-2 select-none pointer-events-none">
       {/* 扫描光束 */}
       <div className="led-scan-beam" />
 
@@ -199,10 +199,10 @@ export default function App() {
         setFiling(null);
       }
     };
-    window.addEventListener('lumos:filing-changed', handler);
+    window.addEventListener('zenspace:filing-changed', handler);
     window.addEventListener('storage', handler);
     return () => {
-      window.removeEventListener('lumos:filing-changed', handler);
+      window.removeEventListener('zenspace:filing-changed', handler);
       window.removeEventListener('storage', handler);
     };
   }, []);
@@ -254,15 +254,15 @@ export default function App() {
   const isSubPage = isTechPage || isArtPage || isInterviewPage || isWorkflowPage || isServicePage;
 
   return (
-    <div id="main-root-container" className="min-h-screen bg-[#070a0e] text-neutral-100 font-sans tracking-tight relative overflow-hidden">
+    <div id="main-root-container" className="min-h-screen bg-[#120e0b] text-neutral-100 font-sans tracking-tight relative overflow-hidden">
       {!isSubPage && (
         <Seo
-          title="光影大师-户外灯光设计|文旅光影创新|酒店外观灯光|展厅灯光设计"
-          description="光影大师专注高端户外灯光设计与夜景照明，提供文旅光影创新、水幕灯光秀、酒店外观灯光、展厅灯光设计、办公楼灯光设计、园林景观灯光、别墅私定灯光、度假村灯光设计、会所灯光设计、博物馆灯光、餐饮灯光、水疗光影、KTV灯光设计、发光路面、灯光装置艺术等专业方案。定制化专业灯光设计服务，服务中国与马来西亚市场。"
+          title="禅境设计-户外灯光设计|文旅光影创新|酒店外观灯光|展厅灯光设计"
+          description="禅境设计专注高端户外灯光设计与夜景照明，提供文旅光影创新、水幕灯光秀、酒店外观灯光、展厅灯光设计、办公楼灯光设计、园林景观灯光、别墅私定灯光、度假村灯光设计、会所灯光设计、博物馆灯光、餐饮灯光、水疗光影、KTV灯光设计、发光路面、灯光装置艺术等专业方案。定制化专业灯光设计服务，服务中国与马来西亚市场。"
           keywords="户外灯光设计,夜景照明设计,文旅光影创新,文旅光影设计,文旅夜游策划,古建照明设计,水幕灯光秀,酒店外观灯光,展厅设计,展厅灯光设计,办公楼灯光设计,园林景观灯光,别墅私定灯光,度假村灯光设计,会所灯光设计,博物馆灯光,餐饮灯光,水疗光影,KTV灯光设计,发光路面,灯光装置艺术,灯光秀设计,景区亮化工程,建筑夜景照明,LED户外照明,灯光设计公司,亮化工程设计"
           path="/"
           faq={[
-            { q: '灯光设计收费标准是什么？', a: '光影大师提供专业灯光设计效果图服务，项目报价根据规模、难度与灯具选型综合评估。' },
+            { q: '灯光设计收费标准是什么？', a: '禅境设计提供专业灯光设计效果图服务，项目报价根据规模、难度与灯具选型综合评估。' },
             { q: '古建照明会不会损伤文物？', a: '我们采用专利非破坏性张力抱箍进行承载，选择不含紫外、蓝光波谱窄幅高饱色温LED，确保对古建彩绘和榫卯木作零损伤。' },
             { q: '文旅夜游策划需要多长时间？', a: '一般文旅夜游项目从概念方案到落地实施需要2-6个月，具体视项目规模和复杂度而定。' },
             { q: '服务范围覆盖哪些城市？', a: '覆盖上海、北京、深圳、广州、成都、杭州、三亚、西安等全国城市，同时服务马来西亚吉隆坡、槟城等东南亚市场。' },
@@ -282,17 +282,17 @@ export default function App() {
           {/* Logo and Brand Name */}
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate('/')}>
             <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-yellow-500 via-amber-600 to-yellow-400 p-0.5 shadow-lg shadow-yellow-500/10 flex items-center justify-center">
-              <div className="w-full h-full bg-[#070a0e] rounded-[10px] flex items-center justify-center">
+              <div className="w-full h-full bg-[#120e0b] rounded-[10px] flex items-center justify-center">
                 <span className="text-yellow-400 font-mono font-bold text-base leading-none">光</span>
               </div>
             </div>
             <div>
               <div className="flex items-center gap-2">
                 <h1 className="text-base font-bold tracking-wider uppercase bg-gradient-to-r from-neutral-50 via-neutral-100 to-neutral-400 bg-clip-text text-transparent">
-                  LUMOS DESIGN
+                  ZENSPACE DESIGN
                 </h1>
                 <span className="text-[9px] bg-yellow-500/10 text-yellow-500 font-mono border border-yellow-500/20 px-1.5 py-0.5 rounded">
-                  光影大师版
+                  禅境设计版
                 </span>
               </div>
               <p className="text-[10px] text-neutral-500 mt-0.5 font-mono">高端户外建筑及地标景观灯光策划平台</p>
@@ -308,7 +308,7 @@ export default function App() {
                 className={`px-3 py-1.5 rounded-lg text-[12px] font-bold font-sans flex items-center gap-1.5 transition-all cursor-pointer shadow-sm ${
                   !isSubPage
                     ? "bg-white/15 border border-white/40 text-white shadow-sm"
-                    : "bg-[#0b0f17] hover:bg-white/10 border border-white/20 hover:border-white/50 text-white/80 hover:text-white"
+                    : "bg-[#1a1310] hover:bg-white/10 border border-white/20 hover:border-white/50 text-white/80 hover:text-white"
                 }`}
                 title="返回首页"
               >
@@ -320,8 +320,8 @@ export default function App() {
                 onClick={() => navigate('/art')}
                 className={`px-2.5 py-1.5 rounded-lg text-[11px] font-bold font-sans flex items-center gap-1.5 transition-all cursor-pointer shadow-sm ${
                   isArtPage
-                    ? "bg-yellow-500/20 border border-yellow-500/50 text-[#facc15] shadow-sm"
-                    : "bg-[#0b0f17] hover:bg-neutral-950 border border-neutral-850 hover:border-yellow-500/40 text-[#facc15] hover:text-yellow-400"
+                    ? "bg-yellow-500/20 border border-yellow-500/50 text-[#e3ba5f] shadow-sm"
+                    : "bg-[#1a1310] hover:bg-neutral-950 border border-neutral-850 hover:border-yellow-500/40 text-[#e3ba5f] hover:text-yellow-400"
                 }`}
                 title="查看全球高端夜景艺术地标谱"
               >
@@ -333,8 +333,8 @@ export default function App() {
                 onClick={() => navigate('/interview')}
                 className={`px-2.5 py-1.5 rounded-lg text-[11px] font-bold font-sans flex items-center gap-1.5 transition-all cursor-pointer shadow-sm ${
                   isInterviewPage
-                    ? "bg-emerald-500/20 border border-emerald-500/50 text-[#10b981] shadow-sm"
-                    : "bg-[#0b0f17] hover:bg-neutral-950 border border-neutral-850 hover:border-emerald-500/40 text-[#10b981] hover:text-emerald-400"
+                    ? "bg-emerald-500/20 border border-emerald-500/50 text-[#778c63] shadow-sm"
+                    : "bg-[#1a1310] hover:bg-neutral-950 border border-neutral-850 hover:border-emerald-500/40 text-[#778c63] hover:text-emerald-400"
                 }`}
                 title="浏览并管理尊贵贵宾的回访采访"
               >
@@ -346,8 +346,8 @@ export default function App() {
                 onClick={() => navigate('/workflow')}
                 className={`px-2.5 py-1.5 rounded-lg text-[11px] font-bold font-sans flex items-center gap-1.5 transition-all cursor-pointer shadow-sm ${
                   isWorkflowPage
-                    ? "bg-cyan-500/20 border border-cyan-500/50 text-[#22d3ee] shadow-sm"
-                    : "bg-[#0b0f17] hover:bg-neutral-950 border border-neutral-850 hover:border-cyan-500/40 text-[#06b6d4] hover:text-[#22d3ee]"
+                    ? "bg-cyan-500/20 border border-cyan-500/50 text-[#d9603f] shadow-sm"
+                    : "bg-[#1a1310] hover:bg-neutral-950 border border-neutral-850 hover:border-cyan-500/40 text-[#c2452b] hover:text-[#d9603f]"
                 }`}
                 title="了解零损非侵入式高级调试流程"
               >
@@ -361,7 +361,7 @@ export default function App() {
                 className={`px-2.5 py-1.5 rounded-lg text-[11px] font-bold font-sans flex items-center gap-1.5 transition-all cursor-pointer shadow-sm ${
                   isTechPage
                     ? "bg-purple-500/20 border border-purple-500/50 text-purple-300"
-                    : "bg-[#0b0f17] hover:bg-neutral-950 border border-neutral-850 hover:border-purple-500/40 text-[#a855f7] hover:text-purple-400"
+                    : "bg-[#1a1310] hover:bg-neutral-950 border border-neutral-850 hover:border-purple-500/40 text-[#a855f7] hover:text-purple-400"
                 }`}
                 title="阅读专业技术专栏文章"
               >
@@ -580,7 +580,7 @@ export default function App() {
                 </button>
                 <button
                   onClick={handleAdd}
-                  className="px-2.5 py-1 rounded bg-yellow-500 hover:bg-yellow-400 text-[#070a0e] text-[10px] font-bold cursor-pointer transition-colors"
+                  className="px-2.5 py-1 rounded bg-yellow-500 hover:bg-yellow-400 text-[#120e0b] text-[10px] font-bold cursor-pointer transition-colors"
                 >
                   确认保存
                 </button>
@@ -645,7 +645,7 @@ export default function App() {
                 onClick={() => setActiveTab('studio')}
                 className={`flex-1 sm:flex-initial px-5 py-2.5 rounded-xl text-xs font-semibold flex items-center justify-center gap-2 transition-all cursor-pointer ${
                   activeTab === 'studio'
-                    ? "bg-gradient-to-r from-neutral-900 to-neutral-850 border border-cyan-500/30 text-[#06b6d4] shadow-md"
+                    ? "bg-gradient-to-r from-neutral-900 to-neutral-850 border border-cyan-500/30 text-[#c2452b] shadow-md"
                     : "text-neutral-400 hover:text-neutral-200"
                 }`}
               >
@@ -725,7 +725,7 @@ export default function App() {
 
               <div className="flex items-center gap-2">
                 <Award className="w-4 h-4 text-yellow-400 animate-pulse" />
-                <span className="font-mono text-[10px] tracking-widest text-[#06b6d4] uppercase font-semibold">
+                <span className="font-mono text-[10px] tracking-widest text-[#c2452b] uppercase font-semibold">
                   LIGHTING ARCHITECTURE / 赋建筑夜景第二生命
                 </span>
               </div>
@@ -777,7 +777,7 @@ export default function App() {
           </div>
 
           <div className="p-5 bg-neutral-950/40 border border-neutral-900 rounded-2xl flex flex-col gap-2">
-            <span className="font-mono text-[9px] uppercase tracking-widest text-[#06b6d4]">02 / 慢节律时节调光 (Regulated)</span>
+            <span className="font-mono text-[9px] uppercase tracking-widest text-[#c2452b]">02 / 慢节律时节调光 (Regulated)</span>
             <h4 className="text-base font-semibold text-neutral-100">动态与双碳能耗规划</h4>
             <p className="text-xs text-neutral-400 leading-relaxed mt-1">
               利用KNX和DALI数智总线协议，分平日、节日及深夜多时段调节。深夜22:30后自动退晕弱化，降幅功耗超六成，契合国家低碳双控白皮书。
@@ -796,7 +796,7 @@ export default function App() {
         {/* FOOTER */}
         <footer className="border-t border-neutral-900 pt-8 pb-4 flex flex-col sm:flex-row justify-between items-center text-xs text-neutral-500 gap-4">
           <div>
-            <p>© 2026 光影大师 LUMOS DESIGN. All Rights Reserved.</p>
+            <p>© 2026 禅境设计 ZENSPACE DESIGN. All Rights Reserved.</p>
             <p className="mt-1 text-[10px] text-neutral-600">高端户外建筑灯光设计 · 文旅夜游策划 · 古建照明</p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-[10px]">

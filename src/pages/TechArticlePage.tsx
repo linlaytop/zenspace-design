@@ -13,7 +13,7 @@ export default function TechArticlePage() {
 
   if (!article) {
     return (
-      <div className="min-h-screen bg-[#070a0e] text-neutral-100 flex items-center justify-center">
+      <div className="min-h-screen bg-[#120e0b] text-neutral-100 flex items-center justify-center">
         <div className="text-center">
           <BookOpen className="w-16 h-16 text-neutral-800 mx-auto mb-4" />
           <p className="text-neutral-500">文章未找到</p>
@@ -47,13 +47,13 @@ export default function TechArticlePage() {
     <>
       <Seo
         title={`${article.title}-灯光设计技术文章`}
-        description={article.summary || `${article.title} - 光影大师技术专栏，分享户外灯光设计、夜景照明、古建照明等专业技术知识。`}
+        description={article.summary || `${article.title} - 禅境设计技术专栏，分享户外灯光设计、夜景照明、古建照明等专业技术知识。`}
         keywords={`${(article.tags || []).join(',')},灯光设计技术,${article.title},户外照明,夜景照明设计`}
         path={`/tech/${id}`}
         type="article"
         breadcrumb={[{ name: '技术专栏', path: '/tech' }, { name: article.title, path: `/tech/${id}` }]}
       />
-    <div className="min-h-screen bg-[#070a0e] text-neutral-100">
+    <div className="min-h-screen bg-[#120e0b] text-neutral-100">
       
       {/* 顶部导航栏 */}
       <div className="border-b border-neutral-900 bg-neutral-950/80 backdrop-blur-md sticky top-0 z-40">

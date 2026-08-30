@@ -23,8 +23,8 @@ interface Firework {
 }
 
 const COLORS = [
-  "#facc15", "#f59e0b", "#06b6d4", "#10b981", "#3b82f6",
-  "#fbbf24", "#34d399", "#22d3ee", "#a78bfa"
+  "#e3ba5f", "#d4a441", "#c2452b", "#778c63", "#9b7a51",
+  "#fbbf24", "#34d399", "#d9603f", "#a78bfa"
 ];
 
 export default function FireworksCanvas() {
@@ -89,7 +89,7 @@ export default function FireworksCanvas() {
 
     const animate = () => {
       if (!ctx || !canvas) return;
-      ctx.fillStyle = "rgba(7, 10, 14, 0.15)";
+      ctx.fillStyle = "rgba(18, 14, 11, 0.15)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       const fws = fireworksRef.current;

@@ -73,7 +73,7 @@ export default function IcpFilingManager() {
 
   const handleSave = () => {
     localStorage.setItem(ICP_STORAGE_KEY, JSON.stringify(filing));
-    window.dispatchEvent(new Event("lumos:filing-changed"));
+    window.dispatchEvent(new Event("zenspace:filing-changed"));
     setMsg("ICP 备案信息已保存，前台底部已同步展示！");
     setTimeout(() => setMsg(""), 2800);
   };
@@ -83,7 +83,7 @@ export default function IcpFilingManager() {
     localStorage.removeItem(ICP_STORAGE_KEY);
     setFiling(DEFAULT_FILING);
     setImagePreview("");
-    window.dispatchEvent(new Event("lumos:filing-changed"));
+    window.dispatchEvent(new Event("zenspace:filing-changed"));
     setMsg("已清空备案信息");
     setTimeout(() => setMsg(""), 2800);
   };

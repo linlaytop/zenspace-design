@@ -9,46 +9,32 @@ import {
   CheckCircle,
   HelpCircle,
   Sparkles,
-  Zap,
-  Waves,
-  Building,
-  Briefcase,
   Landmark,
-  TreePine,
-  Home,
+  Mountain,
   Palmtree,
-  Crown,
   Building2,
-  Utensils,
-  Droplets,
-  Music,
-  Footprints,
-  Palette,
-  ChevronRight,
-  LayoutGrid,
-  Church
+  Sofa,
+  Scroll,
+  Hammer,
+  TreePine,
+  Lamp,
+  Church,
+  ChevronRight
 } from 'lucide-react';
 import Seo from '../components/Seo';
 import { serviceCategories, getServiceCategoryBySlug, type ServiceCategory } from '../data/serviceCategories';
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Sparkles,
-  Zap,
-  Waves,
-  Building,
-  Briefcase,
   Landmark,
-  TreePine,
-  Home,
+  Mountain,
   Palmtree,
-  Crown,
   Building2,
-  Utensils,
-  Droplets,
-  Music,
-  Footprints,
-  Palette,
-  LayoutGrid,
+  Sofa,
+  Scroll,
+  Hammer,
+  TreePine,
+  Lamp,
   Church,
 };
 
@@ -59,7 +45,7 @@ export default function ServiceCategoryPage() {
 
   if (!category) {
     return (
-      <div className="min-h-screen bg-[#070a0e] text-neutral-100 flex items-center justify-center">
+      <div className="min-h-screen bg-[#120e0b] text-neutral-100 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold mb-4">服务分类未找到</h1>
           <button
@@ -91,7 +77,7 @@ export default function ServiceCategoryPage() {
         ]}
         faq={category.faq}
       />
-      <div className="min-h-screen bg-[#070a0e] text-neutral-100">
+      <div className="min-h-screen bg-[#120e0b] text-neutral-100">
         {/* 顶部导航栏 */}
         <div className="border-b border-neutral-900 bg-neutral-950/80 backdrop-blur-md">
           <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -118,12 +104,12 @@ export default function ServiceCategoryPage() {
         <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col gap-10">
           {/* Hero Section */}
           <section className="relative overflow-hidden rounded-3xl border border-neutral-800 bg-gradient-to-br from-neutral-900/80 to-neutral-950/80 p-8 lg:p-12">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-500/5 rounded-full blur-[120px] pointer-events-none" />
+            <div className="absolute top-0 right-0 w-96 h-96 bg-vermilion-500/10 rounded-full blur-[120px] pointer-events-none" />
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="flex flex-col gap-5">
                 <div className="flex items-center gap-2">
-                  <span className="px-2.5 py-1 rounded-full bg-yellow-500/10 text-yellow-400 text-[10px] font-mono border border-yellow-500/20">
-                    LUMOS SERVICE
+                  <span className="px-2.5 py-1 rounded-full bg-vermilion-500/15 text-vermilion-300 text-[10px] font-mono border border-vermilion-500/30">
+                    ZENSPACE SERVICE
                   </span>
                   <span className="text-[10px] font-mono text-neutral-500 tracking-wider">{category.enName}</span>
                 </div>
@@ -139,7 +125,7 @@ export default function ServiceCategoryPage() {
                 <div className="flex flex-wrap gap-3 mt-2">
                   <button
                     onClick={() => navigate('/workflow')}
-                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-yellow-500 to-amber-500 text-[#070a0e] text-sm font-bold hover:from-yellow-400 hover:to-amber-400 transition-all flex items-center gap-2"
+                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-yellow-500 to-amber-500 text-[#120e0b] text-sm font-bold hover:from-yellow-400 hover:to-amber-400 transition-all flex items-center gap-2"
                   >
                     <Phone className="w-4 h-4" />
                     预约咨询
@@ -215,8 +201,8 @@ export default function ServiceCategoryPage() {
 
               {/* FAQ */}
               <section className="p-6 lg:p-8 rounded-2xl bg-neutral-950/40 border border-neutral-800 flex flex-col gap-5">
-                <h2 className="text-xl font-bold text-neutral-100 border-l-4 border-cyan-400 pl-4 flex items-center gap-2">
-                  <HelpCircle className="w-5 h-5 text-cyan-400" />
+                <h2 className="text-xl font-bold text-neutral-100 border-l-4 border-vermilion-500 pl-4 flex items-center gap-2">
+                  <HelpCircle className="w-5 h-5 text-vermilion-400" />
                   常见问题
                 </h2>
                 <div className="flex flex-col gap-4">
@@ -241,7 +227,7 @@ export default function ServiceCategoryPage() {
               >
                 <h3 className="text-lg font-bold text-neutral-100">需要{category.name}方案？</h3>
                 <p className="text-sm text-neutral-400 leading-relaxed">
-                  光影大师提供专业灯光设计效果图，以及从概念到落地的全流程服务。
+                  禅境设计提供专业寺庙设计效果图，以及从概念到落地的全流程服务。
                 </p>
                 <div className="flex flex-col gap-3">
                   <a
@@ -308,11 +294,11 @@ export default function ServiceCategoryPage() {
           <section className="p-8 lg:p-12 rounded-3xl bg-gradient-to-r from-neutral-900 to-neutral-950 border border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h2 className="text-2xl font-bold text-neutral-100 mb-2">准备好打造您的{category.name}项目了吗？</h2>
-              <p className="text-sm text-neutral-400">联系光影大师，获取专业的灯光设计方案和专业灯光设计效果图服务。</p>
+              <p className="text-sm text-neutral-400">联系禅境设计，获取专业的寺庙设计方案与寺庙设计效果图服务。</p>
             </div>
             <button
               onClick={() => navigate('/workflow')}
-              className="px-8 py-3 rounded-xl bg-gradient-to-r from-yellow-500 to-amber-500 text-[#070a0e] font-bold hover:from-yellow-400 hover:to-amber-400 transition-all flex items-center gap-2 whitespace-nowrap"
+              className="px-8 py-3 rounded-xl bg-gradient-to-r from-yellow-500 to-amber-500 text-[#120e0b] font-bold hover:from-yellow-400 hover:to-amber-400 transition-all flex items-center gap-2 whitespace-nowrap"
             >
               立即咨询
               <ArrowRight className="w-5 h-5" />

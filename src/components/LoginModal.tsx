@@ -61,7 +61,7 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
             transition={{ duration: 0.25 }}
-            className="relative w-full max-w-md bg-[#0b0f17] border border-neutral-800 rounded-2xl shadow-2xl overflow-hidden"
+            className="relative w-full max-w-md bg-[#1a1310] border border-neutral-800 rounded-2xl shadow-2xl overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
             {/* 顶部装饰条 */}
