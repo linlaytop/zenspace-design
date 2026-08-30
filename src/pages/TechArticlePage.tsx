@@ -47,7 +47,7 @@ export default function TechArticlePage() {
     <>
       <Seo
         title={`${article.title}-灯光设计技术文章`}
-        description={article.summary || `${article.title} - 禅境设计技术专栏，分享户外灯光设计、夜景照明、古建照明等专业技术知识。`}
+        description={article.summary || `${article.title} - 寺庙佛教设计技术专栏，分享户外灯光设计、夜景照明、古建照明等专业技术知识。`}
         keywords={`${(article.tags || []).join(',')},灯光设计技术,${article.title},户外照明,夜景照明设计`}
         path={`/tech/${id}`}
         type="article"

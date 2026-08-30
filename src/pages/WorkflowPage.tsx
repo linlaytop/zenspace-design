@@ -49,7 +49,7 @@ export default function WorkflowPage() {
     <>
       <Seo
         title="服务流程-专业灯光设计实施步骤"
-        description="禅境设计灯光设计服务流程详解：需求沟通、概念方案、深化设计、施工配合、竣工验收、运维支持。6步专业流程确保灯光设计项目高质量交付。"
+        description="寺庙佛教设计灯光设计服务流程详解：需求沟通、概念方案、深化设计、施工配合、竣工验收、运维支持。6步专业流程确保灯光设计项目高质量交付。"
         keywords="灯光设计流程,照明设计服务,灯光设计方案,灯光设计步骤,夜景照明施工,灯光设计报价,照明工程流程,灯光设计服务流程"
         path="/workflow"
         breadcrumb={[{ name: '服务流程', path: '/workflow' }]}
@@ -81,7 +81,7 @@ export default function WorkflowPage() {
               </span>
             </h1>
             <p className="text-lg text-neutral-400 max-w-2xl font-light leading-relaxed">
-              禅境设计六步专业服务体系 —— 从现场勘测到验收交付，每一步都精益求精，确保每个项目都达到国际顶级标准。
+              寺庙佛教设计六步专业服务体系 —— 从现场勘测到验收交付，每一步都精益求精，确保每个项目都达到国际顶级标准。
             </p>
           </motion.div>
         </div>

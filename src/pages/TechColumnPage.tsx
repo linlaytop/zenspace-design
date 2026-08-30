@@ -67,7 +67,7 @@ export default function TechColumnPage() {
     <>
       <Seo
         title="技术专栏-户外灯光设计技术指南"
-        description="禅境设计技术专栏，分享户外灯光设计技术指南、夜景照明行业趋势、DMX512控制系统、LED灯具选型、古建照明施工工艺等专业文章。"
+        description="寺庙佛教设计技术专栏，分享户外灯光设计技术指南、夜景照明行业趋势、DMX512控制系统、LED灯具选型、古建照明施工工艺等专业文章。"
         keywords="灯光设计技术,夜景照明技术,DMX512控制系统,LED户外照明,灯光设计指南,照明设计教程,古建照明技术,景观照明施工"
         path="/tech"
         breadcrumb={[{ name: '技术专栏', path: '/tech' }]}

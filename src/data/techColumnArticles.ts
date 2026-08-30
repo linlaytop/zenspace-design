@@ -26,7 +26,7 @@ export const TECH_COLUMN_ARTICLES: TechArticle[] = [
     title: "寺庙建筑设计完整指南：从形制法度到落地施工",
     summary: "系统梳理寺庙建筑设计的完整流程：形制选择、营造法式推算、结构体系比选、消防与现代规范融合、施工配合与验收。适合寺院筹建方与设计从业者参考。",
     coverImage: "https://images.unsplash.com/photo-1548013146-72479768bada?w=800&h=500&fit=crop",
-    author: "禅境设计技术团队",
+    author: "寺庙佛教设计技术团队",
     content: [
       {
         type: "heading",
@@ -180,7 +180,7 @@ export const TECH_COLUMN_ARTICLES: TechArticle[] = [
     title: "寺庙灯光设计指南：见光不见灯的克制美学",
     summary: "寺庙照明与商业亮化有本质区别。本文详解寺庙灯光设计的四大原则、分区域照明策略、色温与照度控制，以及古建零损伤安装技术要点。",
     coverImage: "https://images.unsplash.com/photo-1548013146-72479768bada?w=800&h=500&fit=crop",
-    author: "禅境设计技术团队",
+    author: "寺庙佛教设计技术团队",
     content: [
       {
         type: "heading",
@@ -291,7 +291,7 @@ export const TECH_COLUMN_ARTICLES: TechArticle[] = [
     title: "寺庙设计审批与规范指南：从立项到开工",
     summary: "寺庙建设涉及宗教、文物、规划、消防等多部门审批。本文梳理完整的审批流程、必备材料、常见卡点与应对建议，帮筹建方少走弯路。",
     coverImage: "https://images.unsplash.com/photo-1548013146-72479768bada?w=800&h=500&fit=crop",
-    author: "禅境设计技术团队",
+    author: "寺庙佛教设计技术团队",
     content: [
       {
         type: "heading",
@@ -421,7 +421,7 @@ export const TECH_COLUMN_ARTICLES: TechArticle[] = [
       },
       {
         type: "text",
-        content: "禅境设计可协助筹建方准备全套设计文件与技术说明，并配合各部门的技术审查沟通。"
+        content: "寺庙佛教设计可协助筹建方准备全套设计文件与技术说明，并配合各部门的技术审查沟通。"
       }
     ],
     tags: ["寺庙审批", "宗教事务条例", "文物保护", "设计规范"],

@@ -40,7 +40,7 @@ const DEFAULT_SLOTS: DualVideoSlot[] = [
   {
     id: 2,
     title: "《绿色双碳》智能控制灯光实测",
-    location: "禅境设计实验室 · 暗天空标准测试场",
+    location: "寺庙佛教设计实验室 · 暗天空标准测试场",
     notes: "基于 DMX512 / Art-Net 协议，实现多时段亮度微调与低碳功率密度控制。",
     mediaUrl: "https://player.vimeo.com/external/371433846.sd.mp4?s=231175ed7494f1dd37397b9195d852cc563c6253&profile_id=139&oauth2_token_id=57447761",
     mediaType: "video"
@@ -300,7 +300,7 @@ export default function DualVideoShowcase() {
             ...s,
             title: formTitle.trim(),
             location: formLocation.trim() || "项目地标",
-            notes: formNotes.trim() || "禅境设计高定灯光设计案例。",
+            notes: formNotes.trim() || "寺庙佛教设计高定灯光设计案例。",
             mediaUrl: formUrl.trim(),
             mediaType: formMediaType,
             fileName: formFileName || undefined

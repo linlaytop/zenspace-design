@@ -515,7 +515,7 @@ export default function ShowcaseGallery() {
       try {
         const payload = JSON.parse(evt.target?.result as string);
         if (payload.version !== "lumos-design-v1") {
-          alert("错误：此备份文件不适用于当前 禅境设计 亮化平台！");
+          alert("错误：此备份文件不适用于当前 寺庙佛教设计 亮化平台！");
           return;
         }
 
@@ -530,7 +530,7 @@ export default function ShowcaseGallery() {
         setTimeout(() => setBackupNotification(""), 4500);
       } catch (err) {
         console.error("Import backup parsing error:", err);
-        alert("导入失败：请提供合法未损毁的 JSON 格式禅境设计项目包！");
+        alert("导入失败：请提供合法未损毁的 JSON 格式寺庙佛教设计项目包！");
       }
     };
     fileReader.readAsText(file);
@@ -1100,7 +1100,7 @@ export default function ShowcaseGallery() {
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
               <span className="text-[11px] font-mono tracking-wider text-neutral-300 font-bold uppercase">
-                ZENSPACE WORKSPACE / 禅境设计渲染视槽
+                ZENSPACE WORKSPACE / 寺庙佛教设计渲染视槽
               </span>
             </div>
           </div>
@@ -1631,7 +1631,7 @@ export default function ShowcaseGallery() {
         </div>
 
         <p className="text-[11px] text-neutral-450 leading-relaxed">
-          禅境设计设计方案现在可<b>可以直接发布托管</b>至在线云端服务器。当系统上线或刷新页面时，将自动为您和所有访客加载并应用此托管版本方案。
+          寺庙佛教设计方案现在<b>可以直接发布托管</b>至在线云端服务器。当系统上线或刷新页面时，将自动为您和所有访客加载并应用此托管版本方案。
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 mt-1 w-full">

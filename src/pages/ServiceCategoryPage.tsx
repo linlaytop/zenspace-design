@@ -227,7 +227,7 @@ export default function ServiceCategoryPage() {
               >
                 <h3 className="text-lg font-bold text-neutral-100">需要{category.name}方案？</h3>
                 <p className="text-sm text-neutral-400 leading-relaxed">
-                  禅境设计提供专业寺庙设计效果图，以及从概念到落地的全流程服务。
+                  寺庙佛教设计提供专业寺庙设计效果图，以及从概念到落地的全流程服务。
                 </p>
                 <div className="flex flex-col gap-3">
                   <a
@@ -294,7 +294,7 @@ export default function ServiceCategoryPage() {
           <section className="p-8 lg:p-12 rounded-3xl bg-gradient-to-r from-neutral-900 to-neutral-950 border border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h2 className="text-2xl font-bold text-neutral-100 mb-2">准备好打造您的{category.name}项目了吗？</h2>
-              <p className="text-sm text-neutral-400">联系禅境设计，获取专业的寺庙设计方案与寺庙设计效果图服务。</p>
+              <p className="text-sm text-neutral-400">联系寺庙佛教设计，获取专业的寺庙设计方案与寺庙设计效果图服务。</p>
             </div>
             <button
               onClick={() => navigate('/workflow')}

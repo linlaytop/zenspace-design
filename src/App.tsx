@@ -58,7 +58,7 @@ interface Contact {
 }
 
 const DEFAULT_CONTACTS: Contact[] = [
-  { id: '1', type: 'channel', label: '官方视频号', value: '禅境设计空间美学' },
+  { id: '1', type: 'channel', label: '官方视频号', value: '寺庙佛教设计空间美学' },
   { id: '2', type: 'wechat', label: '专属微信号', value: 'LumosDesignVIP' },
   { id: '3', type: 'phone', label: '设计预约手机号', value: '138-1688-6888' }
 ];
@@ -257,12 +257,12 @@ export default function App() {
     <div id="main-root-container" className="min-h-screen bg-[#120e0b] text-neutral-100 font-sans tracking-tight relative overflow-hidden">
       {!isSubPage && (
         <Seo
-          title="禅境设计-户外灯光设计|文旅光影创新|酒店外观灯光|展厅灯光设计"
-          description="禅境设计专注高端户外灯光设计与夜景照明，提供文旅光影创新、水幕灯光秀、酒店外观灯光、展厅灯光设计、办公楼灯光设计、园林景观灯光、别墅私定灯光、度假村灯光设计、会所灯光设计、博物馆灯光、餐饮灯光、水疗光影、KTV灯光设计、发光路面、灯光装置艺术等专业方案。定制化专业灯光设计服务，服务中国与马来西亚市场。"
+          title="寺庙佛教设计-户外灯光设计|文旅光影创新|酒店外观灯光|展厅灯光设计"
+          description="寺庙佛教设计专注高端户外灯光设计与夜景照明，提供文旅光影创新、水幕灯光秀、酒店外观灯光、展厅灯光设计、办公楼灯光设计、园林景观灯光、别墅私定灯光、度假村灯光设计、会所灯光设计、博物馆灯光、餐饮灯光、水疗光影、KTV灯光设计、发光路面、灯光装置艺术等专业方案。定制化专业灯光设计服务，服务中国与马来西亚市场。"
           keywords="户外灯光设计,夜景照明设计,文旅光影创新,文旅光影设计,文旅夜游策划,古建照明设计,水幕灯光秀,酒店外观灯光,展厅设计,展厅灯光设计,办公楼灯光设计,园林景观灯光,别墅私定灯光,度假村灯光设计,会所灯光设计,博物馆灯光,餐饮灯光,水疗光影,KTV灯光设计,发光路面,灯光装置艺术,灯光秀设计,景区亮化工程,建筑夜景照明,LED户外照明,灯光设计公司,亮化工程设计"
           path="/"
           faq={[
-            { q: '灯光设计收费标准是什么？', a: '禅境设计提供专业灯光设计效果图服务，项目报价根据规模、难度与灯具选型综合评估。' },
+            { q: '灯光设计收费标准是什么？', a: '寺庙佛教设计提供专业灯光设计效果图服务，项目报价根据规模、难度与灯具选型综合评估。' },
             { q: '古建照明会不会损伤文物？', a: '我们采用专利非破坏性张力抱箍进行承载，选择不含紫外、蓝光波谱窄幅高饱色温LED，确保对古建彩绘和榫卯木作零损伤。' },
             { q: '文旅夜游策划需要多长时间？', a: '一般文旅夜游项目从概念方案到落地实施需要2-6个月，具体视项目规模和复杂度而定。' },
             { q: '服务范围覆盖哪些城市？', a: '覆盖上海、北京、深圳、广州、成都、杭州、三亚、西安等全国城市，同时服务马来西亚吉隆坡、槟城等东南亚市场。' },
@@ -292,7 +292,7 @@ export default function App() {
                   ZENSPACE DESIGN
                 </h1>
                 <span className="text-[9px] bg-yellow-500/10 text-yellow-500 font-mono border border-yellow-500/20 px-1.5 py-0.5 rounded">
-                  禅境设计版
+                  寺庙佛教设计版
                 </span>
               </div>
               <p className="text-[10px] text-neutral-500 mt-0.5 font-mono">高端户外建筑及地标景观灯光策划平台</p>
@@ -796,7 +796,7 @@ export default function App() {
         {/* FOOTER */}
         <footer className="border-t border-neutral-900 pt-8 pb-4 flex flex-col sm:flex-row justify-between items-center text-xs text-neutral-500 gap-4">
           <div>
-            <p>© 2026 禅境设计 ZENSPACE DESIGN. All Rights Reserved.</p>
+            <p>© 2026 寺庙佛教设计 ZENSPACE DESIGN. All Rights Reserved.</p>
             <p className="mt-1 text-[10px] text-neutral-600">高端户外建筑灯光设计 · 文旅夜游策划 · 古建照明</p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-[10px]">

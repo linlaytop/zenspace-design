@@ -34,7 +34,7 @@ export default function Seo({
   faq,
 }: SeoProps) {
   const fullUrl = `${BASE_URL}${path}`;
-  const fullTitle = title.length > 30 ? title : `${title} | 禅境设计灯光设计`;
+  const fullTitle = title.length > 30 ? title : `${title} | 寺庙佛教设计灯光设计`;
 
   // 面包屑结构化数据
   const breadcrumbItems = [
@@ -63,7 +63,7 @@ export default function Seo({
     ...(image && { image }),
     publisher: {
       '@type': 'Organization',
-      name: '禅境设计',
+      name: '寺庙佛教设计',
       alternateName: 'ZENSPACE DESIGN',
     },
   };
@@ -98,7 +98,7 @@ export default function Seo({
       <meta property="og:type" content={type} />
       <meta property="og:url" content={fullUrl} />
       <meta property="og:locale" content="zh_CN" />
-      <meta property="og:site_name" content="禅境设计 ZENSPACE DESIGN" />
+      <meta property="og:site_name" content="寺庙佛教设计 ZENSPACE DESIGN" />
       {image && <meta property="og:image" content={image} />}
 
       {/* 百度移动适配 */}

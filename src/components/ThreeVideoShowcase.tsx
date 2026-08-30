@@ -35,7 +35,7 @@ const DEFAULT_SLOTS: VideoSlot[] = [
   {
     id: 1,
     title: "《九曜星辰》高定智屏媒体立面演艺",
-    location: "禅境设计湾商务金融大厦 · 像素点控",
+    location: "寺庙佛教设计湾商务金融大厦 · 像素点控",
     notes: "集成式幕墙卡槽高密度像素灯具。数控粒子流自下而上如萤跃动，擦亮竖挺立面。",
     videoUrl: "https://player.vimeo.com/external/371433846.sd.mp4?s=231175ed7494f1dd37397b9195d852cc563c6253&profile_id=139&oauth2_token_id=57447761",
     mediaType: "video"
@@ -669,10 +669,10 @@ export default function ThreeVideoShowcase() {
       {/* Title Header area for the video row */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-neutral-900 pb-4 gap-4">
         <div>
-          <span className="font-mono text-[9px] uppercase tracking-widest text-[#e3a857]">SELECTED CASES / 禅境设计精选案例</span>
+          <span className="font-mono text-[9px] uppercase tracking-widest text-[#e3a857]">SELECTED CASES / 寺庙佛教设计精选案例</span>
           <h3 className="text-xl font-bold text-neutral-100 mt-1 flex items-center gap-2">
             <Tv className="w-5.5 h-5.5 text-yellow-400 shrink-0" />
-            禅境设计精选案例
+            寺庙佛教设计精选案例
           </h3>
           <p className="text-xs text-neutral-400 mt-1">
             每个展示位支持<b>上传视频</b>或<b>高清完工图</b>，动态实景与高精静态兼载，呈现多元化亮化案例。
@@ -1019,10 +1019,10 @@ export default function ThreeVideoShowcase() {
           
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 pb-4 border-b border-neutral-900/85">
             <div>
-              <span className="font-mono text-[9px] uppercase tracking-widest text-purple-400">Dynamic Portfolio / 禅境设计全案媒体展映库</span>
+              <span className="font-mono text-[9px] uppercase tracking-widest text-purple-400">Dynamic Portfolio / 寺庙佛教设计全案媒体展映库</span>
               <h4 className="text-base font-bold text-neutral-100 mt-1 flex items-center gap-2">
                 <Film className="w-5 h-5 text-purple-400 shrink-0" />
-                禅境设计扩展项目视频库 ({extraSlots.length} 个案例)
+                寺庙佛教设计扩展项目视频库 ({extraSlots.length} 个案例)
               </h4>
               <p className="text-xs text-neutral-400 mt-0.5">
                 此库支持上架任意数量的现场案例、外立面试光展示等，不受展示位数量限制。
@@ -1061,7 +1061,7 @@ export default function ThreeVideoShowcase() {
               <div className="flex justify-between items-center border-b border-neutral-850 pb-3 mb-4">
                 <span className="text-xs font-bold text-purple-400 font-mono flex items-center gap-1.5 animate-pulse">
                   <CloudLightning className="w-4 h-4 text-purple-400" />
-                  禅境设计 ✦ 灵动新案例发布控制台
+                  寺庙佛教设计 ✦ 灵动新案例发布控制台
                 </span>
                 <button 
                   type="button"
