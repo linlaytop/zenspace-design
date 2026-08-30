@@ -46,9 +46,9 @@ export default function TechArticlePage() {
   return (
     <>
       <Seo
-        title={`${article.title}-灯光设计技术文章`}
-        description={article.summary || `${article.title} - 寺庙佛教设计技术专栏，分享户外灯光设计、夜景照明、古建照明等专业技术知识。`}
-        keywords={`${(article.tags || []).join(',')},灯光设计技术,${article.title},户外照明,夜景照明设计`}
+        title={article.title}
+        description={article.summary || `寺庙佛教设计技术专栏文章：${article.title}。分享寺庙设计与宗教空间营造的专业知识，涵盖寺庙建筑、室内、软装、雕塑、景观、灯光及祠堂设计。`}
+        keywords={`${(article.tags || []).join(',')},寺庙设计技术,宗教建筑设计,${article.title}`}
         path={`/tech/${id}`}
         type="article"
         breadcrumb={[{ name: '技术专栏', path: '/tech' }, { name: article.title, path: `/tech/${id}` }]}

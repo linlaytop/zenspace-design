@@ -30,7 +30,7 @@ jobs:
         run: npm install --no-audit --no-fund
 
       - name: Build
-        run: npm run build -- --base=/outdoor-lighting/
+        run: npm run build -- --base=/zenspace-design/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

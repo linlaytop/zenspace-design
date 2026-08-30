@@ -44,6 +44,78 @@
     <mobile:mobile type="pc,mobile"/>
   </url>
 
+  <!-- 新增寺庙设计技术文章（10篇） -->
+  <url>
+    <loc>https://zenspace-design.cn/tech/han-buddhist-temple-design-guide</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://zenspace-design.cn/tech/taoist-temple-design-guide</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://zenspace-design.cn/tech/tibetan-buddhist-temple-design-guide</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://zenspace-design.cn/tech/theravada-buddhist-temple-design-guide</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://zenspace-design.cn/tech/temple-interior-design-guide</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://zenspace-design.cn/tech/temple-furnishing-design-guide</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://zenspace-design.cn/tech/temple-landscape-design-guide</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://zenspace-design.cn/tech/temple-ancestral-hall-design-guide</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://zenspace-design.cn/tech/temple-site-selection-guide</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+  <url>
+    <loc>https://zenspace-design.cn/tech/temple-design-budget-guide</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
   <!-- 营造实录列表页 -->
   <url>
     <loc>https://zenspace-design.cn/art</loc>
