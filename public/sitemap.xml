@@ -317,4 +317,13 @@
     <mobile:mobile type="pc,mobile"/>
   </url>
 
+  <!-- 寺庙设计（建筑+景观+灯光一体化） -->
+  <url>
+    <loc>https://lumos-design.cn/service/temple-architecture-design</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
 </urlset>

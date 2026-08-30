@@ -25,7 +25,8 @@ import {
   Footprints,
   Palette,
   ChevronRight,
-  LayoutGrid
+  LayoutGrid,
+  Church
 } from 'lucide-react';
 import Seo from '../components/Seo';
 import { serviceCategories, getServiceCategoryBySlug, type ServiceCategory } from '../data/serviceCategories';
@@ -48,6 +49,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Footprints,
   Palette,
   LayoutGrid,
+  Church,
 };
 
 export default function ServiceCategoryPage() {
