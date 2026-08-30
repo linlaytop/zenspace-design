@@ -42,7 +42,7 @@ export const LIGHTING_CATEGORIES: LightingCategory[] = [
         title: "《莲境重光》汉传丛林整体营造",
         location: "中国浙江 · 某山地丛林寺院",
         concept: "依山就势组织七堂秩序，大雄宝殿采用钢木组合结构满足大跨度与抗震，外立面保持传统庑殿形制。",
-        photographer: "LUMOS Archive",
+        photographer: "禅境设计档案",
         stats: [
           { label: "建筑面积", value: "约 12,000 ㎡" },
           { label: "单体数量", value: "9 座殿堂 + 寮房" },
@@ -73,7 +73,7 @@ export const LIGHTING_CATEGORIES: LightingCategory[] = [
         title: "《紫虚洞天》道教宫观山地营造",
         location: "中国湖北 · 武当山余脉",
         concept: "依四象格局选址，三清殿居中、玉皇殿居高、灵官殿守山门，斋醮坛场独立成区可容大型科仪。",
-        photographer: "LUMOS Archive",
+        photographer: "禅境设计档案",
         stats: [
           { label: "占地", value: "约 38,000 ㎡" },
           { label: "建筑高差", value: "126m 台地叠落" },
@@ -104,7 +104,7 @@ export const LIGHTING_CATEGORIES: LightingCategory[] = [
         title: "《坛城金顶》藏传佛殿高原营造",
         location: "中国西藏 · 海拔 3,580m 山谷",
         concept: "大经堂以曼陀罗九宫格局组织柱网，收分墙厚达 1.2m 兼顾保温与抗风，金顶覆鎏金铜瓦与法轮双鹿。",
-        photographer: "LUMOS Archive",
+        photographer: "禅境设计档案",
         stats: [
           { label: "海拔", value: "3,580m" },
           { label: "墙体收分", value: "1.2m → 0.6m 渐收" },
@@ -135,7 +135,7 @@ export const LIGHTING_CATEGORIES: LightingCategory[] = [
         title: "《雨林金塔》南传佛寺热带营造",
         location: "中国云南 · 西双版纳傣族自治州",
         concept: "干栏式大殿底层架空 1.8m 防潮防虫，重檐五叠大屋顶覆鎏金瓦，独立戒堂供奉佛像与贝叶经。",
-        photographer: "LUMOS Archive",
+        photographer: "禅境设计档案",
         stats: [
           { label: "气候", value: "热带季风年均 1,200mm 雨量" },
           { label: "重檐叠数", value: "5 叠" },
@@ -166,7 +166,7 @@ export const LIGHTING_CATEGORIES: LightingCategory[] = [
         title: "《千年宝刹》古建修缮可逆改造",
         location: "中国山西 · 某全国重点文保寺院",
         concept: "对宋金木构大殿进行结构加固与屋面修缮，全部新加构件采用可逆锚固，彩画地仗按传统工艺恢复。",
-        photographer: "LUMOS Archive",
+        photographer: "禅境设计档案",
         stats: [
           { label: "保护等级", value: "全国重点文保单位" },
           { label: "大殿年代", value: "宋金 (约 900 年)" },
@@ -197,7 +197,7 @@ export const LIGHTING_CATEGORIES: LightingCategory[] = [
         title: "《礼佛净域》大雄宝殿室内营造",
         location: "中国福建 · 某汉传大丛林",
         concept: "佛坛按三佛供奉仪轨定制，藻井三层叠落做声扩散，地面青砖包边供信众礼拜。",
-        photographer: "LUMOS Archive",
+        photographer: "禅境设计档案",
         stats: [
           { label: "大殿净高", value: "12.6m" },
           { label: "藻井层数", value: "3 层叠落" },
@@ -228,7 +228,7 @@ export const LIGHTING_CATEGORIES: LightingCategory[] = [
         title: "《庄严具足》佛诞节庆整体陈设",
         location: "中国广东 · 某律宗道场",
         concept: "为佛诞日设计专属陈设方案：黄底金纹幢幡三重大殿通挂，供盘七件按七供规制，鲜花用曼陀罗造型。",
-        photographer: "LUMOS Archive",
+        photographer: "禅境设计档案",
         stats: [
           { label: "节庆陈设", value: "4 套（日常/朔望/佛诞/水陆）" },
           { label: "织物总量", value: "约 680 ㎡" },
@@ -259,7 +259,7 @@ export const LIGHTING_CATEGORIES: LightingCategory[] = [
         title: "《千佛悲智》大雄宝殿三佛造像",
         location: "中国四川 · 某重建汉传丛林",
         concept: "释迦、药师、阿弥陀三佛按《造像量度经》严校比例，泥塑小样经寺方与仪轨双确认后香樟木雕贴金。",
-        photographer: "LUMOS Archive",
+        photographer: "禅境设计档案",
         stats: [
           { label: "三佛高度", value: "主佛 9.8m / 二佛 7.6m" },
           { label: "小样轮次", value: "12 轮 1:5 修改" },
@@ -290,7 +290,7 @@ export const LIGHTING_CATEGORIES: LightingCategory[] = [
         title: "《空山禅径》寺院山地园林",
         location: "中国江西 · 某山林寺院",
         concept: "依山势设三段礼佛序列：放生池、菩提院、登高香道；银杏松柏配以枯山水石组，营造静观空间。",
-        photographer: "LUMOS Archive",
+        photographer: "禅境设计档案",
         stats: [
           { label: "景观面积", value: "约 18,000 ㎡" },
           { label: "高差处理", value: "约 78m 分级台地" },
@@ -321,7 +321,7 @@ export const LIGHTING_CATEGORIES: LightingCategory[] = [
         title: "《月照宝殿》古建寺庙整体亮化",
         location: "中国浙江 · 某全国重点文保寺院",
         concept: "大殿屋顶、檐口、斗拱分层投光强化木构层次，佛塔分层打亮塔刹做竖向焦点，全部采用非破坏性抱箍承载。",
-        photographer: "LUMOS Archive",
+        photographer: "禅境设计档案",
         stats: [
           { label: "灯具总数", value: "约 1,280 套" },
           { label: "色温", value: "统一 2200K" },

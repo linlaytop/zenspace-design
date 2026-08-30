@@ -41,8 +41,6 @@ import WorkflowDetailPage from "./pages/WorkflowDetailPage";
 import ServiceCategoryPage from "./pages/ServiceCategoryPage";
 import ShowcaseGallery from "./components/ShowcaseGallery";
 import BlueprintStudio from "./components/BlueprintStudio";
-import ThreeVideoShowcase from "./components/ThreeVideoShowcase";
-import SelectedCaseStudy from "./components/SelectedCaseStudy";
 import FireworksCanvas from "./components/FireworksCanvas";
 import HeaderModals from "./components/HeaderModals";
 import LoginModal from "./components/LoginModal";
@@ -262,17 +260,17 @@ export default function App() {
           keywords="寺庙设计,专业寺庙设计,汉传佛教设计,道教宫观设计,藏传佛教设计,南传佛教设计,寺庙建筑设计,寺庙室内设计,寺庙软装设计,寺庙造型雕塑设计,寺庙景观设计,寺庙灯光设计,寺院规划设计,宗教建筑设计,寺庙设计院,佛教建筑设计,道教建筑设计,禅宗寺院设计,藏式寺院设计,南传佛寺设计,寺庙修缮设计,寺庙灯光设计,古建寺庙亮化,佛像设计,寺庙软装陈设"
           path="/"
           faq={[
-            { q: '灯光设计收费标准是什么？', a: '寺庙佛教设计提供专业灯光设计效果图服务，项目报价根据规模、难度与灯具选型综合评估。' },
-            { q: '古建照明会不会损伤文物？', a: '我们采用专利非破坏性张力抱箍进行承载，选择不含紫外、蓝光波谱窄幅高饱色温LED，确保对古建彩绘和榫卯木作零损伤。' },
-            { q: '文旅夜游策划需要多长时间？', a: '一般文旅夜游项目从概念方案到落地实施需要2-6个月，具体视项目规模和复杂度而定。' },
-            { q: '服务范围覆盖哪些城市？', a: '覆盖上海、北京、深圳、广州、成都、杭州、三亚、西安等全国城市，同时服务马来西亚吉隆坡、槟城等东南亚市场。' },
+            { q: '寺庙设计项目一般报价区间是多少？', a: '寺庙佛教设计根据形制、规模、选材与设计深度分档报价，从概念方案到施工图全程一体化服务，单体项目可按殿堂计费或按整体院落面积计费。' },
+            { q: '古建寺庙修缮与新建的设计流程有何不同？', a: '新建项目侧重总体规制与空间秩序；修缮项目须先做现状测绘与残损评估，依据文保级别报批后再做设计，确保干预最小化且全程可逆。' },
+            { q: '汉传、藏传、南传三种形制如何匹配选址？', a: '汉传以中轴对称、院落递进为骨，适合平原与缓坡；藏传依山就势、错层台地，适合高原山地；南传以佛塔为中心、平面展开，适合热带气候。' },
+            { q: '服务范围覆盖哪些城市？', a: '覆盖上海、北京、深圳、广州、成都、杭州、西安、拉萨、景洪等全国城市，同时服务马来西亚吉隆坡、槟城等东南亚市场。' },
           ]}
         />
       )}
 
-      {/* Decorative Blur Background Highlights */}
+      {/* Decorative Blur Background Highlights - 檀木暖色 + 朱红 + 鎏金 */}
       <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-yellow-500/5 rounded-full blur-[160px] pointer-events-none" />
-      <div className="absolute top-1/2 right-1/4 w-[400px] h-[400px] bg-cyan-500/5 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/2 right-1/4 w-[400px] h-[400px] bg-red-700/5 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute bottom-0 left-1/3 w-[600px] h-[600px] bg-amber-500/3 rounded-full blur-[180px] pointer-events-none" />
 
       {/* Header / Navigation Bar - 在所有页面都显示 */}
@@ -606,20 +604,6 @@ export default function App() {
           ) : null}
         </section>
 
-        {/* RED-LINE REGION: THREE COMPLETED CASE VIDEOS DECK (开发者自主上传与完工秀) */}
-        <section className="border-2 border-dashed border-red-500/20 bg-red-950/5 p-6 rounded-3xl shadow-xl shadow-red-950/5 relative overflow-hidden transition-all hover:bg-neutral-950/20 hover:border-red-550/35">
-          {/* Accent red locator badge */}
-          <div className="absolute top-0 right-0 bg-red-500/15 text-red-400 border-b border-l border-red-500/25 px-3 py-1 text-[9px] font-mono uppercase tracking-widest rounded-bl-xl select-none">
-            📍 HIGH-PRIORITY SELECTED CASES / 红线精选案例展映区
-          </div>
-          
-          <ThreeVideoShowcase />
-          
-          <div className="mt-8">
-            <SelectedCaseStudy />
-          </div>
-        </section>
-
         {/* THREE CORE TASK TABS (时尚美观导航) */}
         <section className="flex flex-col gap-6">
           
@@ -797,10 +781,10 @@ export default function App() {
         <footer className="border-t border-neutral-900 pt-8 pb-4 flex flex-col sm:flex-row justify-between items-center text-xs text-neutral-500 gap-4">
           <div>
             <p>© 2026 寺庙佛教设计 ZENSPACE DESIGN. All Rights Reserved.</p>
-            <p className="mt-1 text-[10px] text-neutral-600">高端户外建筑灯光设计 · 文旅夜游策划 · 古建照明</p>
+            <p className="mt-1 text-[10px] text-neutral-600">汉传·藏传·南传佛教设计 · 道教宫观设计 · 寺庙建筑·室内·景观·灯光一体化营造</p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-[10px]">
-            <a href="#ai-smart-consultant" className="hover:text-purple-400 transition-colors">智能照明设计顾问</a>
+            <a href="#ai-smart-consultant" className="hover:text-yellow-400 transition-colors">智能寺庙设计顾问</a>
             {filing && (
               <>
                 {filing.image && (

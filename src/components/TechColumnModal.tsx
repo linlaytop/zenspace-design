@@ -40,7 +40,7 @@ export default function TechColumnModal({ onClose, onArticleClick }: TechColumnM
       <div className="p-5 sm:p-6 overflow-y-auto max-h-[calc(90vh-80px)]">
         <div className="flex flex-col gap-4">
           <p className="text-xs text-neutral-400 leading-relaxed">
-            寺庙佛教设计技术团队分享户外灯光设计专业知识，包括古建照明、文旅夜游、控制系统等领域的技术指南与行业趋势分析。
+            寺庙佛教设计技术团队分享寺庙设计专业知识，包括寺庙建筑、寺庙室内、寺庙软装、寺庙景观、寺庙灯光等领域的技术指南与行业趋势分析。
           </p>
 
           {/* Articles List - 改为竖排布局，类似微信公众号 */}
