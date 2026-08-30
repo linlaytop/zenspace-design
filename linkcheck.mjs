@@ -17,12 +17,16 @@ function norm(pageUrl, href) {
   if (!href) return null;
   if (/^(https?:)?\/\//i.test(href)) return href.startsWith(ORIGIN) ? href : null;
   if (href.startsWith('#') || /^(mailto:|tel:|javascript:)/i.test(href)) return null;
-  try { return new URL(href, pageUrl).href; } catch { return null; }
+  try {
+    // 相对链接按"文档最终 URL"解析；base 若无结尾斜杠则补上，避免 ../ 多退一级
+    const base = !pageUrl.endsWith('/') ? pageUrl + '/' : pageUrl;
+    return new URL(href, base).href;
+  } catch { return null; }
 }
 
 async function get(url) {
-  try { const r = await fetch(url); return { status: r.status, text: await r.text() }; }
-  catch (e) { return { status: 'ERR:' + e.message, text: '' }; }
+  try { const r = await fetch(url); return { status: r.status, text: await r.text(), finalUrl: r.url }; }
+  catch (e) { return { status: 'ERR:' + e.message, text: '', finalUrl: url }; }
 }
 
 async function main() {
@@ -61,12 +65,13 @@ async function main() {
     const iRe = /<img[^>]+src=["']([^"']+)["']/gi;
 
     let m;
+    const baseUrl = res.finalUrl || url;
     const internal = [];
-    while ((m = aRe.exec(html))) { const n = norm(url, m[1]); if (n) internal.push(n); }
+    while ((m = aRe.exec(html))) { const n = norm(baseUrl, m[1]); if (n) internal.push(n); }
     const assets = [];
-    while ((m = sRe.exec(html))) { const n = norm(url, m[1]); if (n) assets.push(n); }
-    while ((m = lRe.exec(html))) { const n = norm(url, m[1]); if (n) assets.push(n); }
-    while ((m = iRe.exec(html))) { const n = norm(url, m[1]); if (n) assets.push(n); }
+    while ((m = sRe.exec(html))) { const n = norm(baseUrl, m[1]); if (n) assets.push(n); }
+    while ((m = lRe.exec(html))) { const n = norm(baseUrl, m[1]); if (n) assets.push(n); }
+    while ((m = iRe.exec(html))) { const n = norm(baseUrl, m[1]); if (n) assets.push(n); }
 
     for (const a of internal) {
       if (!visitedPages.has(a) && a.startsWith(BASE)) queue.push(a);
