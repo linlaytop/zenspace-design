@@ -19,6 +19,7 @@ import {
   TreePine,
   Lamp,
   Church,
+  Home,
   ChevronRight
 } from 'lucide-react';
 import Seo from '../components/Seo';
@@ -36,6 +37,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   TreePine,
   Lamp,
   Church,
+  Home,
 };
 
 export default function ServiceCategoryPage() {

@@ -1,7 +1,7 @@
 ﻿import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { BookOpen, Clock, Calendar, ArrowLeft, Search, Tag, ChevronRight, Zap, Landmark, Cpu, FileText } from 'lucide-react';
+import { BookOpen, Clock, Calendar, ArrowLeft, Search, Tag, ChevronRight, Landmark } from 'lucide-react';
 import { TECH_COLUMN_ARTICLES, TechArticle } from '../data/techColumnArticles';
 import Seo from '../components/Seo';
 
@@ -9,9 +9,6 @@ import Seo from '../components/Seo';
 const categories = [
   { id: 'all', name: '全部文章', icon: BookOpen, active: true },
   { id: 'design', name: '设计指南', icon: Landmark },
-  { id: 'trend', name: '行业趋势', icon: Zap },
-  { id: 'tech', name: '技术手册', icon: Cpu },
-  { id: 'case', name: '案例解析', icon: FileText },
 ];
 
 export default function TechColumnPage() {
@@ -23,12 +20,9 @@ export default function TechColumnPage() {
   const filteredArticles = TECH_COLUMN_ARTICLES.filter(article => {
     const matchesCategory = activeCategory === 'all' || article.tags.some(tag => {
       if (activeCategory === 'design') return tag.includes('设计') || tag.includes('指南');
-      if (activeCategory === 'trend') return tag.includes('趋势') || tag.includes('策划');
-      if (activeCategory === 'tech') return tag.includes('协议') || tag.includes('技术') || tag.includes('DMX');
-      if (activeCategory === 'case') return tag.includes('案例') || tag.includes('项目');
       return false;
     });
-    const matchesSearch = searchQuery === '' || 
+    const matchesSearch = searchQuery === '' ||
       article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       article.summary.toLowerCase().includes(searchQuery.toLowerCase()) ||
       article.tags.some(t => t.toLowerCase().includes(searchQuery.toLowerCase()));
@@ -46,11 +40,6 @@ export default function TechColumnPage() {
       '设计指南': 'bg-blue-500/10 text-blue-400 border-blue-500/20',
       '文物保护': 'bg-red-500/10 text-red-400 border-red-500/20',
       '文旅夜游': 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
-      '行业趋势': 'bg-cyan-500/10 text-cyan-400 border-cyan-500/20',
-      '策划指南': 'bg-purple-500/10 text-purple-400 border-purple-500/20',
-      'DMX512': 'bg-orange-500/10 text-orange-400 border-orange-500/20',
-      '协议': 'bg-pink-500/10 text-pink-400 border-pink-500/20',
-      '技术手册': 'bg-indigo-500/10 text-indigo-400 border-indigo-500/20',
     };
     return colors[tag] || 'bg-neutral-500/10 text-neutral-400 border-neutral-500/20';
   };
@@ -58,8 +47,6 @@ export default function TechColumnPage() {
   // 获取文章角标
   const getBadge = (article: TechArticle) => {
     if (article.tags.includes('指南')) return { text: 'CORE', className: 'bg-blue-500 text-white' };
-    if (article.tags.includes('趋势')) return { text: 'HOT', className: 'bg-red-500 text-white' };
-    if (article.tags.includes('协议')) return { text: 'TECH', className: 'bg-orange-500 text-white' };
     return null;
   };
 

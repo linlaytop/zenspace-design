@@ -114,6 +114,33 @@
       linear-gradient(to right, rgba(212, 164, 65, 0.05) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(212, 164, 65, 0.05) 1px, transparent 1px);
   }
+
+  /* 楷体：佛教寺院题匾、楹联气质 */
+  .font-kai {
+    font-family: "STKaiti", "KaiTi", "Kaiti SC", "楷体", "Noto Serif SC", "Songti SC", serif;
+  }
+
+  /* 佛教风装饰分隔线：鎏金—朱红—鎏金 渐隐 */
+  .temple-rule {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(212, 164, 65, 0.55) 35%,
+      rgba(194, 69, 43, 0.55) 50%,
+      rgba(212, 164, 65, 0.55) 65%,
+      transparent 100%
+    );
+  }
+
+  /* 莲纹淡底：Hero 区若隐若现的曼陀罗/莲华水印 */
+  .temple-mandala {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.06;
+    mix-blend-mode: screen;
+  }
 }
 
 @keyframes soft-breath {
@@ -185,10 +212,9 @@
   background: linear-gradient(
     90deg,
     #e3ba5f 0%,
-    #d4a441 20%,
-    #c2452b 40%,
-    #778c63 60%,
-    #9b7a51 80%,
+    #d4a441 25%,
+    #c2452b 50%,
+    #d4a441 75%,
     #e3ba5f 100%
   );
   background-size: 200% auto;
@@ -198,7 +224,7 @@
   -webkit-text-fill-color: transparent !important;
   animation: led-flow-slide 4s linear infinite;
   display: inline-block;
-  text-shadow: 0 0 15px rgba(212, 164, 65, 0.15); /* Gives a premium glowing lightbulb aura */
+  text-shadow: 0 0 15px rgba(212, 164, 65, 0.15); /* 鎏金暖调光晕 */
 }
 
 
@@ -222,20 +248,20 @@
   animation: fade-in 0.4s ease-out forwards;
 }
 
-/* Custom scrollbar for dark theme */
+/* Custom scrollbar for dark theme - 檀木暖色 */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a0e14;
+  background: #120e0b;
 }
 ::-webkit-scrollbar-thumb {
-  background: #262626;
+  background: #2c2620;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #404040;
+  background: #5a5145;
 }
 
 /* Smooth scroll behavior */
@@ -260,56 +286,41 @@ html {
   will-change: color;
 }
 
-/* 全色相循环：红→橙→黄→绿→青→蓝→紫→红 */
+/* 禅意金红光晕循环：鎏金 → 琥珀 → 朱红 → 琥珀 → 鎏金（仅用寺院色系，去除彩虹冷色） */
 @keyframes rgb-char-cycle {
-  0%   { color: hsl(0,   100%, 62%); }
-  14%  { color: hsl(40,  100%, 60%); }
-  28%  { color: hsl(80,  100%, 58%); }
-  42%  { color: hsl(140, 100%, 58%); }
-  56%  { color: hsl(185, 100%, 60%); }
-  70%  { color: hsl(220, 100%, 65%); }
-  84%  { color: hsl(285, 100%, 66%); }
-  100% { color: hsl(360, 100%, 62%); }
+  0%   { color: hsl(42, 70%, 58%); }  /* 鎏金 */
+  25%  { color: hsl(30, 75%, 55%); }  /* 琥珀 */
+  50%  { color: hsl(10, 68%, 52%); }  /* 朱红 */
+  75%  { color: hsl(30, 75%, 55%); }  /* 琥珀 */
+  100% { color: hsl(42, 70%, 58%); }  /* 鎏金 */
 }
 
 /* 尊重用户的减少动态偏好 */
 @media (prefers-reduced-motion: reduce) {
-  .rgb-char { animation: none; color: hsl(45, 100%, 62%); }
+  .rgb-char { animation: none; color: hsl(42, 70%, 58%); }
 }
 
 /* =====================================================
    LED 七彩变色灯带（Hero 区顶部装饰条）
    ===================================================== */
 
-/* 单个 LED 灯珠：全色相循环 + 发光呼吸 */
+/* 单个灯珠：鎏金 → 朱红 → 鎏金 禅意呼吸（去除彩虹冷色） */
 @keyframes led-dot-cycle {
   0%   {
-    background-color: hsl(0,   100%, 55%);
-    box-shadow: 0 0 4px  hsl(0,   100%, 55%), 0 0 10px hsl(0,   100%, 45%);
-  }
-  16%  {
-    background-color: hsl(60,  100%, 55%);
-    box-shadow: 0 0 4px  hsl(60,  100%, 55%), 0 0 10px hsl(60,  100%, 45%);
+    background-color: hsl(42, 70%, 55%);
+    box-shadow: 0 0 4px  hsl(42, 70%, 55%), 0 0 10px hsl(42, 70%, 45%);
   }
   33%  {
-    background-color: hsl(120, 100%, 55%);
-    box-shadow: 0 0 4px  hsl(120, 100%, 55%), 0 0 10px hsl(120, 100%, 45%);
-  }
-  50%  {
-    background-color: hsl(180, 100%, 58%);
-    box-shadow: 0 0 4px  hsl(180, 100%, 58%), 0 0 10px hsl(180, 100%, 48%);
+    background-color: hsl(12, 68%, 52%);
+    box-shadow: 0 0 4px  hsl(12, 68%, 52%), 0 0 10px hsl(12, 68%, 42%);
   }
   66%  {
-    background-color: hsl(240, 100%, 65%);
-    box-shadow: 0 0 4px  hsl(240, 100%, 65%), 0 0 10px hsl(240, 100%, 55%);
-  }
-  83%  {
-    background-color: hsl(300, 100%, 60%);
-    box-shadow: 0 0 4px  hsl(300, 100%, 60%), 0 0 10px hsl(300, 100%, 50%);
+    background-color: hsl(30, 75%, 54%);
+    box-shadow: 0 0 4px  hsl(30, 75%, 54%), 0 0 10px hsl(30, 75%, 44%);
   }
   100% {
-    background-color: hsl(360, 100%, 55%);
-    box-shadow: 0 0 4px  hsl(360, 100%, 55%), 0 0 10px hsl(360, 100%, 45%);
+    background-color: hsl(42, 70%, 55%);
+    box-shadow: 0 0 4px  hsl(42, 70%, 55%), 0 0 10px hsl(42, 70%, 45%);
   }
 }
 

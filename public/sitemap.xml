@@ -196,7 +196,7 @@
     <mobile:mobile type="pc,mobile"/>
   </url>
 
-  <!-- ===== 寺庙设计服务分类页（核心业务页，10个）===== -->
+  <!-- ===== 寺庙设计服务分类页（核心业务页，11个）===== -->
 
   <!-- 汉传佛教设计 -->
   <url>
@@ -282,6 +282,15 @@
   <!-- 寺庙灯光设计 -->
   <url>
     <loc>https://zenspace-design.cn/service/temple-lighting-design</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <mobile:mobile type="pc,mobile"/>
+  </url>
+
+  <!-- 祠堂空间设计 -->
+  <url>
+    <loc>https://zenspace-design.cn/service/ancestral-hall-space-design</loc>
     <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>

@@ -279,7 +279,7 @@ export default function BlueprintStudio() {
             </div>
           ))}
           
-          <div className="md:col-span-2 bg-[#082f49]/15 border border-cyan-800/20 p-6 rounded-2xl text-left flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
+          <div className="md:col-span-2 bg-neutral-900/40 border border-yellow-500/15 p-6 rounded-2xl text-left flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
             <div className="flex gap-3 items-center">
               <Zap className="w-6 h-6 text-cyan-400 animate-pulse shrink-0" />
               <div>
@@ -294,7 +294,7 @@ export default function BlueprintStudio() {
                 const aiBtn = document.getElementById("tab-btn-ai");
                 if (aiBtn) aiBtn.click();
               }}
-              className="px-5 py-2.5 bg-gradient-to-r from-cyan-500 to-blue-500 hover:opacity-90 text-neutral-950 font-black rounded-xl text-xs shrink-0 select-none cursor-pointer"
+              className="px-5 py-2.5 bg-gradient-to-r from-yellow-500 to-[#c2452b] hover:opacity-90 text-neutral-950 font-black rounded-xl text-xs shrink-0 select-none cursor-pointer"
             >
               咨询 智能中控顾问
             </button>

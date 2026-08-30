@@ -329,6 +329,37 @@ export const LIGHTING_CATEGORIES: LightingCategory[] = [
         ]
       }
     ]
+  },
+  {
+    id: "ancestral-hall-space-design",
+    name: "祠堂空间设计",
+    englishName: "Ancestral Hall Space Design",
+    description: "依《朱子家礼》三进形制，按昭穆位次组织空间。兼顾祭祀仪轨、族谱陈列、家风讲学、节庆聚会的复合使用需求，适配徽派、客家、潮汕、闽南、巴蜀等地域宗族文化。",
+    imageUrl: villaImg,
+    technicalDetails: {
+      basePowerDensity: "祠堂主体 约 300-1,800 ㎡",
+      typicalK: "2200K-2700K 暖色温",
+      controlProtocol: "三进二井制 / 昭穆位次 / 匾联堂号",
+      ecologyLevel: "传统营造 + 现代规范融合"
+    },
+    features: [
+      "依《朱子家礼》三进形制组织礼仪序列",
+      "中轴对称、昭穆位次、左右配享严格布局",
+      "传统营造与族谱陈列、家风讲堂复合功能兼容"
+    ],
+    cases: [
+      {
+        title: "《敦本堂》徽派宗祠整体营造",
+        location: "中国安徽 · 皖南某千年古村",
+        concept: "三进二井制中轴对称，正厅享堂高悬「敦本」堂号，两侧厢房改造为族谱陈列室与家风讲堂。",
+        photographer: "禅境设计档案",
+        stats: [
+          { label: "建筑面积", value: "约 1,860 ㎡" },
+          { label: "形制", value: "三进二井制" },
+          { label: "承载人口", value: "全族约 2,400 人" }
+        ]
+      }
+    ]
   }
 ];
 

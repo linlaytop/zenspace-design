@@ -958,6 +958,8 @@ export default function ShowcaseGallery() {
                       setParams({ temperature: 2400, intensity: 70, color: "rgba(119, 140, 99, 0.3)", animationMode: "breath" });
                     } else if (cat.id === "temple-lighting-design") {
                       setParams({ temperature: 1800, intensity: 85, color: "rgba(212, 164, 65, 0.4)", animationMode: "breath" });
+                    } else if (cat.id === "ancestral-hall-space-design") {
+                      setParams({ temperature: 2200, intensity: 65, color: "rgba(155, 122, 81, 0.35)", animationMode: "breath" });
                     } else {
                       setParams({ temperature: 2200, intensity: 70, color: "rgba(212, 164, 65, 0.35)", animationMode: "breath" });
                     }
