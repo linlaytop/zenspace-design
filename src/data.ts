@@ -18,6 +18,7 @@ import spaImg from "./assets/images/resort_scenic_lighting_1779988187407.png";
 import ktvImg from "./assets/images/lightshow_monument_1779988049122.png";
 import starPathImg from "./assets/images/garden_landscape_lighting_1779988128848.png";
 import artInstallImg from "./assets/images/cultural_tourism_lighting_1780650907536.png";
+import hanBuddhistImg from "./assets/images/han_buddhist_temple_1788504109776.jpg";
 
 export const LIGHTING_CATEGORIES: LightingCategory[] = [
   {
@@ -25,7 +26,7 @@ export const LIGHTING_CATEGORIES: LightingCategory[] = [
     name: "汉传佛教设计",
     englishName: "Han Chinese Buddhist Temple Design",
     description: "依伽蓝七堂制与中轴对称布局，遵循宋《营造法式》与清《工程做法则例》推算材分。统筹僧团修行流线与信众礼佛动线，营造可长期使用的当代丛林。",
-    imageUrl: culturalTourismImg,
+    imageUrl: hanBuddhistImg,
     technicalDetails: {
       basePowerDensity: "大殿主体 约 800-1,500 ㎡",
       typicalK: "1800K-2400K 暖古铜色温",
