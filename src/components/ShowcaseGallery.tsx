@@ -27,12 +27,14 @@ import {
   Terminal,
   Sparkles,
   Coins,
-  QrCode
+  QrCode,
+  Lock
 } from "lucide-react";
 import { LIGHTING_CATEGORIES } from "../data";
 import { LightingCategory, LightingParam } from "../types";
 import { useWechatQrCode } from "../hooks/useWechatQrCode";
 import { useAuth } from "../context/AuthContext";
+import LoginModal from "./LoginModal";
 import NewsSection from "./NewsSection";
 import DualVideoShowcase from "./DualVideoShowcase";
 
@@ -242,7 +244,8 @@ export function getSafeBlobUrl(url: string): string {
 }
 
 export default function ShowcaseGallery() {
-  const { isLoggedIn } = useAuth();
+  const { isAdmin, isLoggedIn } = useAuth();
+  const [showLoginModal, setShowLoginModal] = useState(false);
   const [selectedCatId, setSelectedCatId] = useState<string>("han-buddhist-temple-design"); // Default to first temple category
   const [customImages, setCustomImages] = useState<Record<string, string>>(() => {
     try {
@@ -892,8 +895,8 @@ export default function ShowcaseGallery() {
                 <span>保存全案</span>
               </button>
             </>
-          ) : (
-            <label 
+          ) : isAdmin ? (
+            <label
               htmlFor="facade-upload-input"
               className="group relative flex items-center justify-center gap-2 bg-[#1a1310]/80 hover:bg-neutral-950 border-2 border-dashed border-purple-500/40 hover:border-purple-500 px-5 py-2.5 rounded-xl text-xs text-neutral-200 font-mono transition-all cursor-pointer shadow-lg w-full sm:w-auto animate-pulse overflow-hidden"
             >
@@ -913,6 +916,10 @@ export default function ShowcaseGallery() {
                 }}
               />
             </label>
+          ) : (
+            <div className="flex items-center justify-center gap-2 bg-neutral-950/40 border border-dashed border-neutral-800 px-5 py-2.5 rounded-xl text-xs text-neutral-600 font-mono w-full sm:w-auto">
+              <span>🔒 仅管理员可上传实景/视频</span>
+            </div>
           )}
         </div>
       </div>
@@ -1311,7 +1318,7 @@ export default function ShowcaseGallery() {
                     )}
                   </motion.div>
                 </AnimatePresence>
-              ) : (
+              ) : isAdmin ? (
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-[#1a1310]/85 border border-neutral-900 m-4 rounded-2xl">
                   <div className="w-14 h-14 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-purple-400 mb-3 animate-pulse">
                     <Layers className="w-6 h-6" />
@@ -1320,7 +1327,7 @@ export default function ShowcaseGallery() {
                   <p className="text-[11px] text-neutral-500 max-w-sm mt-1.5 leading-relaxed">
                     请在上方外框配置区，或者在下方直接拖入/点击上传您特定的建筑实写大相/动态视频，系统将自动开始计算物理色谱与照度。
                   </p>
-                  <label 
+                  <label
                     htmlFor="immediate-inject-upload-input"
                     className="relative overflow-hidden mt-4 px-3.5 py-2 bg-purple-950/20 hover:bg-purple-900/20 text-xs font-mono font-bold text-purple-400 border border-purple-500/30 rounded-lg cursor-pointer transition-colors"
                   >
@@ -1339,6 +1346,16 @@ export default function ShowcaseGallery() {
                       }}
                     />
                   </label>
+                </div>
+              ) : (
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-[#1a1310]/85 border border-neutral-900 m-4 rounded-2xl">
+                  <div className="w-14 h-14 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-600 mb-3">
+                    <Lock className="w-6 h-6" />
+                  </div>
+                  <h4 className="text-xs font-bold text-neutral-500 uppercase tracking-widest font-mono">仅管理员可上传</h4>
+                  <p className="text-[11px] text-neutral-600 max-w-sm mt-1.5 leading-relaxed">
+                    登录管理员账号后可上传专属建筑实景与视频素材。
+                  </p>
                 </div>
               )}
 
@@ -1690,6 +1707,12 @@ export default function ShowcaseGallery() {
       </div>
         </>
       )}
+
+      {/* 上传功能管理员登录闸门：未登录用户点击上传会跳出来 */}
+      <LoginModal
+        isOpen={showLoginModal}
+        onClose={() => setShowLoginModal(false)}
+      />
 
   </div>
 );

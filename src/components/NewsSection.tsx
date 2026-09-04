@@ -333,7 +333,7 @@ function compressImage(file: File, maxSize = 800, quality = 0.85): Promise<strin
 }
 
 function LightStandardsBoard() {
-  const { isLoggedIn } = useAuth();
+  const { isAdmin } = useAuth();
   const [articles, setArticles] = useState<StandardArticle[]>(DEFAULT_STANDARD_ARTICLES);
   const [editingId, setEditingId] = useState<string | null>(null);
   const [editForm, setEditForm] = useState<Partial<StandardArticle>>({});
@@ -468,10 +468,10 @@ function LightStandardsBoard() {
               国际及国内灯光标准
             </h4>
             <p className="text-[10px] text-neutral-500 mt-0.5">
-              {isLoggedIn ? "已登录 · 可上传 · 可编辑 · 自动保存" : "聚焦寺庙设计、汉传佛教设计、道教宫观设计、寺庙灯光等10大专业领域"}
+              {isAdmin ? "已登录 · 可上传 · 可编辑 · 自动保存" : "聚焦寺庙设计、汉传佛教设计、道教宫观设计、寺庙灯光等10大专业领域"}
             </p>
           </div>
-          {isLoggedIn && (
+          {isAdmin && (
             <button
               onClick={addArticle}
               className="w-7 h-7 rounded-lg bg-purple-500/10 hover:bg-purple-500/20 border border-purple-500/30 text-purple-400 flex items-center justify-center transition-colors cursor-pointer"
@@ -492,14 +492,14 @@ function LightStandardsBoard() {
               <div
                 key={article.id}
                 onClick={() => {
-                  if (isLoggedIn) {
+                  if (isAdmin) {
                     if (editingId !== article.id) startEdit(article);
                   } else {
                     setSelectedArticle(article);
                   }
                 }}
                 className={`group relative rounded-xl border p-3.5 transition-all hover:shadow-sm cursor-pointer ${
-                  isLoggedIn ? "hover:border-opacity-60" : "hover:border-opacity-80"
+                  isAdmin ? "hover:border-opacity-60" : "hover:border-opacity-80"
                 } ${STANDARD_COLORS[article.color]}`}
               >
                 {editingId === article.id ? (
@@ -616,7 +616,7 @@ function LightStandardsBoard() {
                       <h5 className="text-sm font-bold text-neutral-100 leading-snug">
                         {article.title}
                       </h5>
-                      {isLoggedIn && (
+                      {isAdmin && (
                         <div
                           className="flex items-center gap-1"
                           onClick={(e) => e.stopPropagation()}
@@ -655,7 +655,7 @@ function LightStandardsBoard() {
                       <p className="text-[9px] text-neutral-600 font-mono">
                         {article.publishDate}
                       </p>
-                      {!isLoggedIn && (
+                      {!isAdmin && (
                         <span className="text-[10px] text-neutral-500 flex items-center gap-0.5 group-hover:text-purple-400 transition-colors">
                           查看详情
                           <ChevronRight className="w-3 h-3" />
@@ -670,7 +670,7 @@ function LightStandardsBoard() {
         </div>
 
         <div className="mt-4 pt-3 border-t border-neutral-800 flex items-center justify-between">
-          {isLoggedIn ? (
+          {isAdmin ? (
             <>
               <span className="text-[9px] text-neutral-600 font-mono">
                 {lastSaved ? `已保存 ${lastSaved.toLocaleTimeString("zh-CN")}` : "自动保存中..."}
@@ -755,7 +755,7 @@ function LightStandardsBoard() {
                   {selectedArticle.content}
                 </p>
 
-                {isLoggedIn && (
+                {isAdmin && (
                   <div className="flex items-center gap-2 pt-4 mt-2 border-t border-neutral-900">
                     <button
                       onClick={() => {

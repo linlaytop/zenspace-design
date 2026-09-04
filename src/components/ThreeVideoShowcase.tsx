@@ -360,7 +360,7 @@ function CustomImagePlayer({ imageUrl }: { imageUrl: string }) {
 }
 
 export default function ThreeVideoShowcase() {
-  const { isLoggedIn } = useAuth();
+  const { isAdmin } = useAuth();
   const [slots, setSlots] = useState<VideoSlot[]>(() => {
     const saved = localStorage.getItem("lumos_three_video_slots");
     if (saved) {
@@ -680,7 +680,7 @@ export default function ThreeVideoShowcase() {
         </div>
 
         {/* Restore control button - only visible when logged in */}
-        {isLoggedIn && (
+        {isAdmin && (
           <button
             onClick={handleResetToDefaults}
             className="px-3 py-1.5 rounded-lg bg-neutral-950 border border-neutral-850 hover:border-neutral-700 hover:text-yellow-400 text-neutral-400 text-xs font-mono transition-all cursor-pointer whitespace-nowrap"
@@ -714,7 +714,7 @@ export default function ThreeVideoShowcase() {
                   CASE DECK #0{slot.id} {isVideo ? "🎥" : "🖼️"}
                 </span>
                 
-                {hasContent && isLoggedIn && (
+                {hasContent && isAdmin && (
                   <div className="flex items-center gap-2">
                     <button
                       onClick={() => handleOpenEdit(slot)}
@@ -732,7 +732,7 @@ export default function ThreeVideoShowcase() {
                     </button>
                   </div>
                 )}
-                {hasContent && !isLoggedIn && (
+                {hasContent && !isAdmin && (
                   <div className="flex items-center gap-2">
                     <span className="text-[9px] text-neutral-600">登录后可见</span>
                   </div>
@@ -756,7 +756,7 @@ export default function ThreeVideoShowcase() {
                     </p>
                     
                     <div className="flex gap-2.5 mt-2.5">
-                      {isLoggedIn ? (
+                      {isAdmin ? (
                         <>
                           <button
                             onClick={() => {
@@ -1030,7 +1030,7 @@ export default function ThreeVideoShowcase() {
             </div>
 
             <div className="flex items-center gap-2">
-              {isLoggedIn && (
+              {isAdmin && (
                 <button
                   type="button"
                   onClick={() => {
@@ -1047,14 +1047,14 @@ export default function ThreeVideoShowcase() {
                   {showPublishForm ? "📂 收起发布控制台" : "➕ 发布新项目案例(视频/图)"}
                 </button>
               )}
-              {!isLoggedIn && (
+              {!isAdmin && (
                 <span className="text-[10px] text-neutral-600 font-mono">登录后可发布新案例</span>
               )}
             </div>
           </div>
 
           {/* DYNAMIC CASE PUBLISHING DASHBOARD — only visible to logged-in admin */}
-          {isLoggedIn && showPublishForm && (
+          {isAdmin && showPublishForm && (
             <div className="bg-[#0b0d12]/95 border border-purple-500/25 rounded-2xl p-5 mb-6 text-left shadow-2xl relative overflow-hidden">
               <div className="absolute right-0 top-0 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl pointer-events-none" />
               
@@ -1245,7 +1245,7 @@ export default function ThreeVideoShowcase() {
                         <span className={`w-1.5 h-1.5 rounded-full ${isVideo ? "bg-purple-400" : "bg-cyan-400"} animate-pulse`} />
                         EXT CASE #{slot.id.toString().slice(-4)} {isVideo ? "🎥" : "🖼️"}
                       </span>
-                      {isLoggedIn && (
+                      {isAdmin && (
                         <button
                           type="button"
                           onClick={() => handleDeleteExtraSlot(slot.id)}

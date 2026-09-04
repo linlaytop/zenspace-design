@@ -226,7 +226,7 @@ function CustomImagePlayer({ url }: { url: string }) {
 }
 
 export default function DualVideoShowcase() {
-  const { isLoggedIn } = useAuth();
+  const { isAdmin } = useAuth();
   const [slots, setSlots] = useState<DualVideoSlot[]>(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
@@ -367,7 +367,7 @@ export default function DualVideoShowcase() {
           )}
 
           {/* Admin edit/delete overlay */}
-          {isLoggedIn && !isEditing && (
+          {isAdmin && !isEditing && (
             <div className="absolute top-3 right-3 flex gap-2">
               <button
                 onClick={() => openEdit(slot)}
@@ -530,7 +530,7 @@ export default function DualVideoShowcase() {
             双视频实景展示
           </h3>
         </div>
-        {isLoggedIn && (
+        {isAdmin && (
           <button
             onClick={handleReset}
             className="text-[10px] text-neutral-500 hover:text-yellow-400 font-mono flex items-center gap-1 transition-colors"
