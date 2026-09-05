@@ -18,7 +18,7 @@ import spaImg from "./assets/images/resort_scenic_lighting_1779988187407.png";
 import ktvImg from "./assets/images/lightshow_monument_1779988049122.png";
 import starPathImg from "./assets/images/garden_landscape_lighting_1779988128848.png";
 import artInstallImg from "./assets/images/cultural_tourism_lighting_1780650907536.png";
-import hanBuddhistImg from "./assets/images/han_buddhist_temple_1788504109776.jpg";
+import hanBuddhistImg from "./assets/images/han_buddhist_temple_clipboard_20260905.jpg";
 
 export const LIGHTING_CATEGORIES: LightingCategory[] = [
   {
