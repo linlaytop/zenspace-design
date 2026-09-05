@@ -35,9 +35,6 @@ export default function TechArticlePage() {
       '设计指南': 'bg-blue-500/10 text-blue-400 border-blue-500/30',
       '文物保护': 'bg-red-500/10 text-red-400 border-red-500/30',
       '文旅夜游': 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30',
-      '行业趋势': 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30',
-      '策划指南': 'bg-purple-500/10 text-purple-400 border-purple-500/30',
-      'DMX512': 'bg-orange-500/10 text-orange-400 border-orange-500/30',
       '协议': 'bg-pink-500/10 text-pink-400 border-pink-500/30',
     };
     return colors[tag] || 'bg-neutral-500/10 text-neutral-400 border-neutral-500/30';

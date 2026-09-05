@@ -21,7 +21,7 @@ export default function NewsSection() {
             </div>
             <h3 className="text-2xl font-bold text-neutral-100">新闻与行业洞见</h3>
             <p className="text-xs text-neutral-500 mt-1 max-w-xl">
-              分享最新项目落地、灯光设计趋势与专业技术观点，像公众号一样图文并茂。
+              分享最新项目落地、寺庙设计趋势与专业技术观点，像公众号一样图文并茂。
             </p>
           </div>
           <span className="text-[10px] text-neutral-600 font-mono">
@@ -48,7 +48,7 @@ export default function NewsSection() {
                   <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-transparent" />
                   <div className="absolute top-3 left-3">
                     <span className="px-2 py-1 rounded-lg bg-purple-500/15 border border-purple-500/25 text-[10px] font-mono text-purple-300">
-                      {article.tags[0] || "灯光设计"}
+                      {article.tags[0] || "寺庙设计"}
                     </span>
                   </div>
                 </div>
@@ -808,9 +808,6 @@ function getTagColor(tag: string) {
     '设计指南': 'bg-blue-500/10 text-blue-400 border-blue-500/30',
     '文物保护': 'bg-red-500/10 text-red-400 border-red-500/30',
     '文旅夜游': 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30',
-    '行业趋势': 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30',
-    '策划指南': 'bg-purple-500/10 text-purple-400 border-purple-500/30',
-    'DMX512': 'bg-orange-500/10 text-orange-400 border-orange-500/30',
     '协议': 'bg-pink-500/10 text-pink-400 border-pink-500/30',
   };
   return colors[tag] || 'bg-neutral-500/10 text-neutral-400 border-neutral-500/30';
