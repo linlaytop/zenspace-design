@@ -37,6 +37,7 @@ import { useAuth } from "../context/AuthContext";
 import LoginModal from "./LoginModal";
 import NewsSection from "./NewsSection";
 import DualVideoShowcase from "./DualVideoShowcase";
+import hanBuddhistFloorPlanImg from "../assets/images/han_buddhist_floor_plan_20260905.png";
 
 interface MediaPage {
   mediaUrl: string;
@@ -207,6 +208,16 @@ const CATEGORY_MEDIA_PAGES: Record<string, MediaPage[]> = {
       title: "《星河私域》沉浸式无边下洗微光",
       location: "中国深圳 · 湾区游艇会俱乐部",
       concept: "在超深防眩隐藏铝槽内铺设无微差微光灯带，通过对数微瓦调光形成平缓对流，使夜幕下的泳池与廊架完美消融。"
+    }
+  ],
+  "han-buddhist-temple-design": [
+    {
+      mediaUrl: hanBuddhistFloorPlanImg,
+      mediaType: "image",
+      title: "《伽蓝七堂》汉传寺院平面布局示意",
+      location: "中国 · 典型汉传佛教丛林",
+      concept: "坐北朝南，沿中轴线由南向北依次组织山门、天王殿、大雄宝殿、法堂、藏经阁；东西两侧配置钟楼、鼓楼、禅堂、斋堂等配殿，体现伽蓝七堂制与渐进礼佛动线。",
+      photographer: "禅境设计档案"
     }
   ]
 };
